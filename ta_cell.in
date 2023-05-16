@@ -1,0 +1,48 @@
+&CONTROL
+   calculation      = 'relax'
+   tstress          = .true.
+   tprnfor          = .true.
+   outdir           = 'outdir'
+   etot_conv_thr    = 1e-05
+   forc_conv_thr    = 0.0001
+   pseudo_dir       = 'q-e/pseudo/'
+/
+&SYSTEM
+   ecutwfc          = 30
+   occupations      = 'smearing'
+   degauss          = 0.01
+   smearing         = 'gaussian'
+   ntyp             = 1
+   nat              = 9
+   ibrav            = 0
+/
+&ELECTRONS
+   conv_thr         = 1e-08
+/
+&IONS
+/
+&CELL
+/
+
+ATOMIC_SPECIES
+Ta 180.94788 ta_pbe_v1.uspp.F.UPF
+
+K_POINTS automatic
+1 1 1  0 0 0
+
+CELL_PARAMETERS angstrom
+9.91740000000000 0.00000000000000 0.00000000000000
+4.95870000000000 7.01266079173947 0.00000000000000
+0.00000000000000 0.00000000000000 2.00000000000000
+
+ATOMIC_POSITIONS angstrom
+Ta 0.0000000000 0.0000000000 1.0000000000 
+Ta 3.3058000000 0.0000000000 1.0000000000 
+Ta 6.6116000000 0.0000000000 1.0000000000 
+Ta 1.6529000000 2.3375535972 1.0000000000 
+Ta 4.9587000000 2.3375535972 1.0000000000 
+Ta 8.2645000000 2.3375535972 1.0000000000 
+Ta 3.3058000000 4.6751071945 1.0000000000 
+Ta 6.6116000000 4.6751071945 1.0000000000 
+Ta 9.9174000000 4.6751071945 1.0000000000 
+
