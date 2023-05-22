@@ -1,5 +1,5 @@
 
-     Program PWSCF v.7.2 starts on 16May2023 at  3:12:19 
+     Program PWSCF v.7.2 starts on 17May2023 at 23:24:11 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -13,9 +13,9 @@
      Parallel version (MPI), running on     1 processors
 
      MPI processes distributed on     1 nodes
-     72708 MiB available memory on the printing compute node when the environment starts
+     71888 MiB available memory on the printing compute node when the environment starts
 
-     Reading input from HfNbTaZr_2x2x2.in
+     Reading input from HfNbTaZr_2x2x1_relax.in
 Warning: card &CELL ignored
 Warning: card / ignored
 
