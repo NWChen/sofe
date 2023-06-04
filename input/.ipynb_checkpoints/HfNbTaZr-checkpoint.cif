@@ -1,0 +1,62 @@
+
+#======================================================================
+# CRYSTAL DATA
+#----------------------------------------------------------------------
+data_VESTA_phase_1
+
+_chemical_name_common                  'HfTaNbZr'
+_cell_length_a                         6.680000
+_cell_length_b                         6.680000
+_cell_length_c                         13.360000
+_cell_angle_alpha                      90.000000
+_cell_angle_beta                       90.000000
+_cell_angle_gamma                      90.000000
+_cell_volume                           596.155218
+_space_group_name_H-M_alt              'P 1'
+_space_group_IT_number                 1
+
+loop_
+_space_group_symop_operation_xyz
+   'x, y, z'
+
+loop_
+   _atom_site_label
+   _atom_site_occupancy
+   _atom_site_fract_x
+   _atom_site_fract_y
+   _atom_site_fract_z
+   _atom_site_adp_type
+   _atom_site_U_iso_or_equiv
+   _atom_site_type_symbol
+   Hf1        1.0     0.250000     0.750000     0.375000    Uiso  ? Hf
+   Hf2        1.0     0.250000     0.750000     0.875000    Uiso  ? Hf
+   Hf3        1.0     0.500000     0.500000     0.750000    Uiso  ? Hf
+   Hf4        1.0     0.500000     1.000000     0.250000    Uiso  ? Hf
+   Hf5        1.0     0.500000     1.000000     0.750000    Uiso  ? Hf
+   Hf6        1.0     0.750000     0.750000     0.625000    Uiso  ? Hf
+   Hf7        1.0     1.000000     0.500000     1.000000    Uiso  ? Hf
+   Hf8        1.0     1.000000     1.000000     0.750000    Uiso  ? Hf
+   Ta1        1.0     0.250000     0.250000     0.625000    Uiso  ? Ta
+   Ta2        1.0     0.250000     0.250000     0.875000    Uiso  ? Ta
+   Ta3        1.0     0.500000     1.000000     1.000000    Uiso  ? Ta
+   Ta4        1.0     0.750000     0.250000     0.375000    Uiso  ? Ta
+   Ta5        1.0     0.750000     0.250000     0.625000    Uiso  ? Ta
+   Ta6        1.0     0.750000     0.250000     0.875000    Uiso  ? Ta
+   Ta7        1.0     0.750000     0.750000     0.125000    Uiso  ? Ta
+   Ta8        1.0     1.000000     0.500000     0.500000    Uiso  ? Ta
+   Nb1        1.0     0.250000     0.250000     0.375000    Uiso  ? Nb
+   Nb2        1.0     0.500000     0.500000     0.250000    Uiso  ? Nb
+   Nb3        1.0     0.500000     0.500000     0.500000    Uiso  ? Nb
+   Nb4        1.0     0.500000     1.000000     0.500000    Uiso  ? Nb
+   Nb5        1.0     0.750000     0.750000     0.375000    Uiso  ? Nb
+   Nb6        1.0     1.000000     0.500000     0.250000    Uiso  ? Nb
+   Nb7        1.0     1.000000     1.000000     0.250000    Uiso  ? Nb
+   Nb8        1.0     1.000000     1.000000     1.000000    Uiso  ? Nb
+   Zr1        1.0     0.250000     0.250000     0.125000    Uiso  ? Zr
+   Zr2        1.0     0.250000     0.750000     0.125000    Uiso  ? Zr
+   Zr3        1.0     0.250000     0.750000     0.625000    Uiso  ? Zr
+   Zr4        1.0     0.500000     0.500000     1.000000    Uiso  ? Zr
+   Zr5        1.0     0.750000     0.250000     0.125000    Uiso  ? Zr
+   Zr6        1.0     0.750000     0.750000     0.875000    Uiso  ? Zr
+   Zr7        1.0     1.000000     0.500000     0.750000    Uiso  ? Zr
+   Zr8        1.0     1.000000     1.000000     0.500000    Uiso  ? Zr
