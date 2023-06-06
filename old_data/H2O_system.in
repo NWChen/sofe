@@ -1,0 +1,39 @@
+
+&control
+    calculation = 'md'
+    restart_mode='from_scratch'
+    prefix = 'h2o'
+    pseudo_dir = 'q-e/pseudo'
+    dt=20,
+    nstep=2,
+/
+&system
+    ibrav=1, celldm(1) =15, nat=4, ntyp=3,
+    ecutwfc=25, nosym=.true.
+/
+&electrons
+    conv_thr=1e-8
+/
+&ions
+    pot_extrapolation='second-order'
+    wfc_extrapolation='second-order'
+    ion_temperature='reduce-T'
+    tempw=300
+    delta_t=-10
+/
+ATOMIC_SPECIES
+ H  1.00784  h_pbe_v1.4.uspp.F.UPF
+ O  15.999   o_pbe_v1.2.uspp.F.UPF
+ C  12.011   c_pbe_v1.2.uspp.F.UPF
+ATOMIC_POSITIONS (angstrom)
+O        5.000425817   4.781574242   4.999840589
+H        4.999764264   5.408907510   5.779839929
+H        4.999809919   5.409518248   4.220319481
+C        0.010000000   0.010000000   0.010000000
+ATOMIC_VELOCITIES
+O 0.0 0.0 0.0
+H 0.0 0.0 0.0
+C 0.0 0.0 2.0
+K_POINTS (automatic)
+  3 3 3 0 0 0
+    
