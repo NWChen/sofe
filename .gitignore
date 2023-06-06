@@ -1,0 +1,11 @@
+*.tar.gz
+venv
+venv/*
+.ipynb_checkpoints/
+h2o.save/
+index.html?tmstv=1685445597
+openmpi-3.1.3/
+outdir/
+pwscf.save/
+q-e/
+sqs2poscar/

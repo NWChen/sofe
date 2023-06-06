@@ -88,27 +88,27 @@
     },
     "resolve": {
       "alias": {
-        "@phosphor/algorithm$": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/node_modules/@lumino/algorithm/dist/index.js",
-        "@phosphor/application$": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/node_modules/@lumino/application/dist/index.js",
-        "@phosphor/commands$": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/node_modules/@lumino/commands/dist/index.js",
-        "@phosphor/coreutils$": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/node_modules/@lumino/coreutils/dist/index.node.js",
-        "@phosphor/disposable$": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/node_modules/@lumino/disposable/dist/index.js",
-        "@phosphor/domutils$": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/node_modules/@lumino/domutils/dist/index.js",
-        "@phosphor/dragdrop$": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/node_modules/@lumino/dragdrop/dist/index.js",
-        "@phosphor/dragdrop/style": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/node_modules/@lumino/widgets/style",
-        "@phosphor/messaging$": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/node_modules/@lumino/messaging/dist/index.js",
-        "@phosphor/properties$": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/node_modules/@lumino/properties/dist/index.js",
-        "@phosphor/signaling": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/node_modules/@lumino/signaling/dist/index.js",
-        "@phosphor/widgets/style": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/node_modules/@lumino/widgets/style",
-        "@phosphor/virtualdom$": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/node_modules/@lumino/virtualdom/dist/index.js",
-        "@phosphor/widgets$": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/node_modules/@lumino/widgets/dist/index.js"
+        "@phosphor/algorithm$": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/node_modules/@lumino/algorithm/dist/index.js",
+        "@phosphor/application$": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/node_modules/@lumino/application/dist/index.js",
+        "@phosphor/commands$": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/node_modules/@lumino/commands/dist/index.js",
+        "@phosphor/coreutils$": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/node_modules/@lumino/coreutils/dist/index.node.js",
+        "@phosphor/disposable$": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/node_modules/@lumino/disposable/dist/index.js",
+        "@phosphor/domutils$": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/node_modules/@lumino/domutils/dist/index.js",
+        "@phosphor/dragdrop$": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/node_modules/@lumino/dragdrop/dist/index.js",
+        "@phosphor/dragdrop/style": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/node_modules/@lumino/widgets/style",
+        "@phosphor/messaging$": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/node_modules/@lumino/messaging/dist/index.js",
+        "@phosphor/properties$": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/node_modules/@lumino/properties/dist/index.js",
+        "@phosphor/signaling": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/node_modules/@lumino/signaling/dist/index.js",
+        "@phosphor/widgets/style": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/node_modules/@lumino/widgets/style",
+        "@phosphor/virtualdom$": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/node_modules/@lumino/virtualdom/dist/index.js",
+        "@phosphor/widgets$": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/node_modules/@lumino/widgets/dist/index.js"
       },
       "fallback": {
         "url": false,
         "buffer": false,
         "crypto": false,
-        "path": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/node_modules/path-browserify/index.js",
-        "process": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/node_modules/process/browser.js"
+        "path": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/node_modules/path-browserify/index.js",
+        "process": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/node_modules/process/browser.js"
       }
     },
     "watchOptions": {
@@ -117,7 +117,7 @@
     },
     "output": {
       "hashFunction": "sha256",
-      "path": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/build",
+      "path": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/build",
       "publicPath": "{{page_config.fullStaticUrl}}/",
       "filename": "[name].[contenthash].js"
     },
@@ -138,14 +138,14 @@
       {
         "userOptions": {
           "chunksSortMode": "none",
-          "template": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/templates/template.html",
+          "template": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/templates/template.html",
           "title": "JupyterLab"
         },
         "version": 5
       },
       {},
       {
-        "buildDir": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/build",
+        "buildDir": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/build",
         "staticDir": "../static",
         "_first": true
       },
@@ -545,9 +545,6 @@
               "requiredVersion": "^13.5.17",
               "singleton": true
             },
-            "@jupyter-widgets/jupyterlab-manager": {
-              "requiredVersion": "5.0.7"
-            },
             "@lumino/polling": {
               "requiredVersion": "^1.9.0"
             },
@@ -575,27 +572,6 @@
             "typestyle": {
               "requiredVersion": "^2.0.4"
             },
-            "@jupyter-widgets/base": {
-              "requiredVersion": "^6.0.4"
-            },
-            "@jupyter-widgets/base-manager": {
-              "requiredVersion": "^1.0.5"
-            },
-            "@jupyter-widgets/controls": {
-              "requiredVersion": "^5.0.5"
-            },
-            "@jupyter-widgets/output": {
-              "requiredVersion": "^6.0.4"
-            },
-            "@types/backbone": {
-              "requiredVersion": "1.4.14"
-            },
-            "jquery": {
-              "requiredVersion": "^3.1.1"
-            },
-            "semver": {
-              "requiredVersion": "^7.3.5"
-            },
             "react-highlighter": {
               "requiredVersion": "^0.4.3"
             },
@@ -620,7 +596,7 @@
       "main": [
         "./publicpath",
         "whatwg-fetch",
-        "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/build/bootstrap.js"
+        "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/build/bootstrap.js"
       ]
     },
     "optimization": {
@@ -643,10 +619,10 @@
   {
     "mode": "production",
     "entry": {
-      "index": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/node_modules/@jupyterlab/theme-dark-extension/style/theme.css"
+      "index": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/node_modules/@jupyterlab/theme-dark-extension/style/theme.css"
     },
     "output": {
-      "path": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/themes/@jupyterlab/theme-dark-extension",
+      "path": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/themes/@jupyterlab/theme-dark-extension",
       "filename": "[name].js",
       "hashFunction": "sha256"
     },
@@ -655,7 +631,7 @@
         {
           "test": {},
           "use": [
-            "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/node_modules/mini-css-extract-plugin/dist/loader.js",
+            "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/node_modules/mini-css-extract-plugin/dist/loader.js",
             "css-loader"
           ]
         },
@@ -700,10 +676,10 @@
   {
     "mode": "production",
     "entry": {
-      "index": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/node_modules/@jupyterlab/theme-light-extension/style/theme.css"
+      "index": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/node_modules/@jupyterlab/theme-light-extension/style/theme.css"
     },
     "output": {
-      "path": "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/themes/@jupyterlab/theme-light-extension",
+      "path": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/themes/@jupyterlab/theme-light-extension",
       "filename": "[name].js",
       "hashFunction": "sha256"
     },
@@ -712,7 +688,7 @@
         {
           "test": {},
           "use": [
-            "/usr/local/google/home/nqc/git/md/venv/share/jupyter/lab/staging/node_modules/mini-css-extract-plugin/dist/loader.js",
+            "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/jupyterlab/staging/node_modules/mini-css-extract-plugin/dist/loader.js",
             "css-loader"
           ]
         },
