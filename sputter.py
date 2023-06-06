@@ -12,7 +12,7 @@ from matplotlib import pyplot as plt
 import numpy as np
 from datetime import datetime
 
-from .qe_utils import (velocity,
+from qe_utils import (velocity,
     import_vasp,
     output_to_atoms,
     relax,
@@ -110,7 +110,7 @@ atoms.set_cell(np.array([ # TODO this code is dogshit, clean it up
 ))
 
 # preview(atoms)
-output_filename = md(atoms, nsteps=N_STEPS, dt=DT, AXIS=AXIS, initial_eV=INITIAL_EV, suffix='relaxed_slab_{}'.format(current_datetime))
+output_filename = md(atoms, nsteps=N_STEPS, dt=DT, AXIS=AXIS, initial_eV=INITIAL_EV, suffix='relaxed_slab_{}'.format(formatted_datetime))
 
 # We have to do this bit to get `ase` to be able to read the file in again
 # TODO: file bugfix PR in ase
