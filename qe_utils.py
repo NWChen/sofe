@@ -66,7 +66,8 @@ def run(input_filename, output_filename):
     """
     os.environ['INPUT_FILENAME'] = input_filename
     os.environ['OUTPUT_FILENAME'] = output_filename
-    subprocess.run(['mpirun', '-np', '12', 'q-e/bin/pw.x', '-inp', '$INPUT_FILENAME', '>', '$OUTPUT_FILENAME'])
+    p1 = subprocess.Popen(['mpirun', '-np', '12', 'q-e/bin/pw.x', '-inp', '$INPUT_FILENAME', '>', '$OUTPUT_FILENAME'])
+    p1.wait()
 
 def velocity(atomic_mass, energy):
     """
