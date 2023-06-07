@@ -60,14 +60,13 @@ def output_to_atoms(output_filename):
         atoms = atoms[-1]
     return atoms
 
-def run(input_filename, output_filename):
+def run(input_filename, output_filename, ncores):
     """
     Runs a QE operation. Assumes input file already exists
     """
-    os.environ['INPUT_FILENAME'] = input_filename
-    os.environ['OUTPUT_FILENAME'] = output_filename
-    p1 = subprocess.Popen(['mpirun', '-np', '12', 'q-e/bin/pw.x', '-inp', '$INPUT_FILENAME', '>', '$OUTPUT_FILENAME'])
-    p1.wait()
+    with open(output_filename, 'w') as f:
+        p = subprocess.call(['mpirun', '-np', str(ncores), 'q-e/bin/pw.x', '-inp', input_filename], stdout=f)
+        p.wait()
 
 def velocity(atomic_mass, energy):
     """
@@ -261,7 +260,7 @@ def pin_bottom_layers(atoms, nlayers, axis='z'):
     pinned_atoms.set_constraint(FixAtoms(mask=mask))
     return pinned_atoms
 
-def md(atoms, nsteps, dt, AXIS="x", initial_eV=None, suffix=None):
+def md(atoms, nsteps, dt, AXIS="x", initial_eV=None, suffix=None, ncores=12):
     suffix = f'{nsteps}steps_{initial_eV}eV' + (f'_{suffix}' if suffix else '')
     input_filename = get_qe_filename(atoms, Calculation.MD, FileType.INPUT, suffix=suffix)
     output_filename = get_qe_filename(atoms, Calculation.MD, FileType.OUTPUT, suffix=suffix)
@@ -324,5 +323,5 @@ def md(atoms, nsteps, dt, AXIS="x", initial_eV=None, suffix=None):
             print(f'Writing D initial velocity {initial_eV}eV ({velocity_au} Hartree au)')
             f.write(atomic_velocities_str)
 
-    run(input_filename, output_filename)
+    run(input_filename, output_filename, ncores)
     return output_filename
