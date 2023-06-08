@@ -267,8 +267,8 @@ def pin_bottom_layers(atoms, nlayers, axis='z'):
     pinned_atoms.set_constraint(FixAtoms(mask=mask))
     return pinned_atoms
 
-def md(atoms, nsteps, dt, AXIS="x", initial_eV=None, suffix=None, ncores=12):
-    suffix = f'{nsteps}steps_{initial_eV}eV' + (f'_{suffix}' if suffix else '')
+def md(atoms, nsteps, dt, AXIS="x", initial_eV=None, incident_angle_deg=0, polar_angle_deg=0, suffix=None, ncores=12):
+    suffix = f'{nsteps}steps_{initial_eV}eV_incident{incident_angle_deg}_polar{polar_angle_deg}' + (f'_{suffix}' if suffix else '')
     input_filename = get_qe_filename(atoms, Calculation.MD, FileType.INPUT, suffix=suffix)
     output_filename = get_qe_filename(atoms, Calculation.MD, FileType.OUTPUT, suffix=suffix)
     
