@@ -219,21 +219,28 @@ def relax(atoms, vc=False):
     run(input_filename, output_filename)
     return output_filename
 
-def get_D_position(atoms, INITIAL_DISTANCE_A=5.0, axis='z'):
+def get_D_position(atoms, initial_distance_a=5.0, axis='z', normal_angle_deg=0, polar_angle_deg=0):
     """
     Get a position at which to place a single D atom.
     
     Args:
         atoms: ase.Atoms object
-        INITIAL_DISTANCE_A: initial distance between top of slab & D atom, in Angstroms
+        initial_distance_a: initial distance between top of slab & D atom, in Angstroms
+        normal_angle_deg: Angle from slab surface normal, in degrees
+        polar_angle_deg: Angle on face of slab. y-axis (up) is 0deg
     """
+    if axis != 'x':
+        raise NotImplementedError
+
+    normal_angle_rad, polar_angle_rad = np.radians(normal_angle_deg), np.radians(polar_angle_deg)
+    radius = initial_distance_a * np.sin(normal_angle_rad)
+    dx = initial_distance_a * np.cos(normal_angle_rad)
+    dy = radius * np.cos(polar_angle_rad)
+    dz = radius * np.sin(polar_angle_rad)
+    
     mean_xyz = np.mean(atoms.positions, axis=0)
-    if axis == 'y': # TODO this code is dogshit, clean it up
-        top_y = np.max(atoms.positions[:, 1]) # largest cartesian y coordinate (top of slab)
-        return np.array([mean_xyz[0], top_y + INITIAL_DISTANCE_A, mean_xyz[-1]])
-    elif axis == 'x':
-        top_x = np.max(atoms.positions[:, 0]) # largest cartesian y coordinate (top of slab)
-        return np.array([top_x + INITIAL_DISTANCE_A, mean_xyz[1], mean_xyz[2]])
+    top_x = np.max(atoms.positions[:, 0]) # largest cartesian x coordinate (top of slab)
+    return np.array([top_x + dx, mean_xyz[1] + dy, mean_xyz[2] + dz])
 
 def consecutive(data, stepsize=1.0):
     return np.split(data, np.where(np.diff(data) >= stepsize)[0]+1)
