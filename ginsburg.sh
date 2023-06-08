@@ -14,7 +14,7 @@ module load QE/7.2
 # export LD_LIBRARY_PATH="/burg/home/msa2187/.local/lib/python3.9/site-packages/nvidia/cublas/lib":$LD_LIBRARY_PATH
 export CONDA_ROOT="/burg/opt/anaconda3-2022.05/"
 . $CONDA_ROOT/etc/profile.d/conda.sh
-conda activate sofe
+conda activate /burg/urbangroup/users/msa2187/sofe_env
 
 export PYTHONPATH=$PYTHONPATH:/burg/opt/anaconda3-2022.05/lib/python3.9/site-packages:/burg/urbangroup/users/msa2187/sofe_env/bin/pip:/burg/urbangroup/users/msa2187/sofe_env/lib/python3.9/site-packages
 export ASE_ESPRESSO_COMMAND=/burg/opt/QE/7.2/bin/pw.x -in PREFIX.pwi > PREFIX.pwo
