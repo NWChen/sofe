@@ -97,7 +97,7 @@ atoms.center(vacuum=VACUUM, axis=2)
 atoms = pin_bottom_layers(atoms, nlayers=2, axis=AXIS)
 
 # Place the D atom in the center of the slab, `INITIAL_DISTANCE_A` Angstroms away
-DEUTERIUM_XYZ = get_D_position(atoms, INITIAL_DISTANCE_A=INITIAL_DISTANCE_A, axis=AXIS)
+DEUTERIUM_XYZ = get_D_position(atoms, initial_distance_a=INITIAL_DISTANCE_A, axis=AXIS)
 deuterium = Atom('H', mass=DEUTERIUM_MASS_AMU, position=DEUTERIUM_XYZ)
 atoms.append(deuterium)
 
