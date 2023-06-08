@@ -17,7 +17,7 @@ export CONDA_ROOT="/burg/opt/anaconda3-2022.05/"
 conda activate /burg/urbangroup/users/msa2187/sofe_env
 
 export PYTHONPATH=$PYTHONPATH:/burg/opt/anaconda3-2022.05/lib/python3.9/site-packages:/burg/urbangroup/users/msa2187/sofe_env/bin/pip:/burg/urbangroup/users/msa2187/sofe_env/lib/python3.9/site-packages
-export ASE_ESPRESSO_COMMAND=/burg/opt/QE/7.2/bin/pw.x -in PREFIX.pwi > PREFIX.pwo
+export ASE_ESPRESSO_COMMAND=$(/burg/opt/QE/7.2/bin/pw.x -in $PREFIX.pwi > $PREFIX.pwo)
 export ESPRESSO_PSEUDO=/burg/urbangroup/users/msa2187/pseudo
 
 #Command to execute Python program
