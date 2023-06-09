@@ -9,6 +9,7 @@
 
 module load anaconda
 module load QE/7.2
+module load openmpi/gcc/64/4.1.5a1
 # module load cuda11.1/toolkit
 
 # export LD_LIBRARY_PATH="/burg/home/msa2187/.local/lib/python3.9/site-packages/nvidia/cublas/lib":$LD_LIBRARY_PATH

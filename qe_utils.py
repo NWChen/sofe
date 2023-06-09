@@ -65,8 +65,7 @@ def run(input_filename, output_filename, ncores):
     Runs a QE operation. Assumes input file already exists
     """
     with open(output_filename, 'w') as f:
-        # p = subprocess.call(['mpirun', '/burg/opt/QE/7.2/bin/pw.x', '-inp', input_filename, '--use-hwthread-cpus'], stdout=f)
-        p = subprocess.call(['/burg/opt/QE/7.2/bin/pw.x', '-inp', input_filename], stdout=f)
+        p = subprocess.call(['mpirun', '/burg/opt/QE/7.2/bin/pw.x', '-inp', input_filename, '--use-hwthread-cpus'], stdout=f)
         p.wait()
 
 def velocity(atomic_mass, energy):
