@@ -69,7 +69,7 @@ def run(input_filename, output_filename, ncores):
         p = subprocess.call(['/burg/opt/QE/7.2/bin/pw.x', '-inp', input_filename], stdout=f)
         p.wait()
 
-def velocity(atomic_mass, energy):
+def velocity(atomic_mass, energy, normal_angle_deg=0, polar_angle_deg=0, axis='x'):
     """
     Computes the velocity of an atom in Hartree atomic units, given the atomic mass in atomic units and the energy in electronvolts.
 
@@ -80,6 +80,8 @@ def velocity(atomic_mass, energy):
     Returns:
     The velocity of the atom in Hartree atomic units.
     """
+    if axis != 'x':
+        raise NotImplementedError
 
     # Convert the atomic mass to kilograms.
     atomic_mass_kg = atomic_mass * 1.660539040e-27
@@ -92,8 +94,20 @@ def velocity(atomic_mass, energy):
 
     # Convert the velocity to Hartree atomic units.
     velocity_ha = velocity_ms / 2.187691e6
+    
+    normal_angle_rad, polar_angle_rad = np.radians(normal_angle_deg), np.radians(polar_angle_deg)
+    planar_magnitude = velocity_ha * np.sin(normal_angle_rad)
+    vx = velocity_ha * np.cos(normal_angle_rad)
+    vy = planar_magnitude * np.cos(polar_angle_rad)
+    vz = planar_magnitude * np.sin(polar_angle_rad)
+    
+    return (-vx, vy, vz) # negate vx so that particle approaches the slab
 
-    return velocity_ha
+assert velocity(1., 100, 0, 0) == velocity(1., 100, 0, 360)
+assert np.all(np.isclose(
+    velocity(1., 100, 45, 0),
+    velocity(1., 100, 45, 360)
+))
 
 
 def preview(atoms):
@@ -281,12 +295,12 @@ def md(atoms, nsteps, dt, AXIS="x", initial_eV=None, incident_angle_deg=0, polar
                 atomic_velocities_str += f'{el} 0.0 0.0 0.0\n'
 
         DEUTERIUM_MASS_AMU = 2.014
-        velocity_au = velocity(DEUTERIUM_MASS_AMU, initial_eV)
+        vx_au, vy_au, vz_au = velocity(DEUTERIUM_MASS_AMU, initial_eV, normal_angle_deg=incident_angle_deg, polar_angle_deg=polar_angle_deg)
         if AXIS == 'x': # TODO this code is dogshit, clean it up
-            format_str = 'H {:.5f} 0.0 0.0'
-        elif AXIS == 'y':
-            format_str = 'H 0.0 {:.5f} 0.0'
-        atomic_velocities_str += format_str.format(-velocity_au)
+            format_str = 'H {:.5f} {:.5f} {:.5f}'
+        else:
+            raise NotImplementedError
+        atomic_velocities_str += format_str.format(vx_au, vy_au, vz_au)
     
     input_data = {
         'control': {
