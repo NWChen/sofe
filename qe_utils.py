@@ -342,7 +342,7 @@ def md(atoms, nsteps, dt, AXIS="x", initial_eV=None, incident_angle_deg=0, polar
             kpts=None, # gamma k-points
         )
         if initial_eV:
-            print(f'Writing D initial velocity {initial_eV}eV (vx={vx}, vy={vy}, vz={vz} Hartree au)')
+            print(f'Writing D initial velocity {initial_eV}eV (vx={vx_au}, vy={vy_au}, vz={vz_au} Hartree au)')
             f.write(atomic_velocities_str)
 
     run(input_filename, output_filename, ncores)
