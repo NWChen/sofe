@@ -20,7 +20,7 @@ import re
 import shutil
 
 # File/directory constants
-PSEUDO_DIR = 'q-e/pseudo/'
+PSEUDO_DIR = '/burg/urbangroup/users/msa2187/pseudo'
 PSEUDOPOTENTIALS = {
     'Ta': 'ta_pbe_v1.uspp.F.UPF',
     'Nb': 'nb_pbe_v1.uspp.F.UPF',
