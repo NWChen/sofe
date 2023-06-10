@@ -20,6 +20,7 @@ import re
 import shutil
 
 # File/directory constants
+NON_CLUSTER_PSEUDO_DIR = 'q-e/pseudo'
 PSEUDO_DIR = '/burg/urbangroup/users/msa2187/pseudo'
 PSEUDOPOTENTIALS = {
     'Ta': 'ta_pbe_v1.uspp.F.UPF',
@@ -66,13 +67,16 @@ def run(input_filename, output_filename, ncores, is_cluster=True):
     """
     with open(output_filename, 'w') as f:
         if is_cluster:
-            args = ['mpirun', '/burg/opt/QE/7.2/bin/pw.x', '-inp', input_filename, '--use-hwthread-cpus']
+            args = ['mpirun', '-np', str(ncores), '/burg/opt/QE/7.2/bin/pw.x', '-inp', input_filename, '--use-hwthread-cpus']
         else:
-            args = ['q-e/bin/pw.x', '-inp', input_filename]
+            args = ['mpirun', '-np', str(ncores), 'q-e/bin/pw.x', '-inp', input_filename]
         
-        print(f'Running command: {' '.join(args)}')
+        arg_str = ' '.join(args)
+        print(f'Running command: {arg_str}')
         p = subprocess.call(args, stdout=f)
-        p.wait()
+        
+        if is_cluster:
+            p.wait()
         # p = subprocess.call(['mpirun', '/burg/opt/QE/7.2/bin/pw.x', '-inp', input_filename, '--use-hwthread-cpus'], stdout=f)
         #p = subprocess.call(['/burg/opt/QE/7.2/bin/pw.x', '-inp', input_filename], stdout=f)
 
@@ -288,7 +292,7 @@ def pin_bottom_layers(atoms, nlayers, axis='x'):
     pinned_atoms.set_constraint(FixAtoms(mask=mask))
     return pinned_atoms
 
-def md(atoms, nsteps, dt, AXIS="x", initial_eV=None, incident_angle_deg=0, polar_angle_deg=0, suffix=None, ncores=12):
+def md(atoms, nsteps, dt, AXIS="x", initial_eV=None, incident_angle_deg=0, polar_angle_deg=0, suffix=None, is_cluster=True, ncores=12):
     suffix = f'{nsteps}steps_{initial_eV}eV_incident{incident_angle_deg}_polar{polar_angle_deg}' + (f'_{suffix}' if suffix else '')
     input_filename = get_qe_filename(atoms, Calculation.MD, FileType.INPUT, suffix=suffix)
     output_filename = get_qe_filename(atoms, Calculation.MD, FileType.OUTPUT, suffix=suffix)
@@ -313,7 +317,7 @@ def md(atoms, nsteps, dt, AXIS="x", initial_eV=None, incident_angle_deg=0, polar
             'calculation': Calculation.MD.value,
             'dt': dt,
             'nstep': nsteps,
-            'pseudo_dir': PSEUDO_DIR,
+            'pseudo_dir': PSEUDO_DIR if is_cluster else NON_CLUSTER_PSEUDO_DIR,
             'etot_conv_thr': 1e-2, # 1e-4
             'forc_conv_thr': 1e-2, # 1e-5
             'outdir': OUTDIR
@@ -351,5 +355,5 @@ def md(atoms, nsteps, dt, AXIS="x", initial_eV=None, incident_angle_deg=0, polar
             print(f'Writing D initial velocity {initial_eV}eV (vx={vx_au}, vy={vy_au}, vz={vz_au} Hartree au)')
             f.write(atomic_velocities_str)
 
-    run(input_filename, output_filename, ncores)
+    run(input_filename, output_filename, ncores=ncores, is_cluster=is_cluster)
     return output_filename
