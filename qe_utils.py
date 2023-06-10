@@ -60,13 +60,19 @@ def output_to_atoms(output_filename):
         atoms = atoms[-1]
     return atoms
 
-def run(input_filename, output_filename, ncores):
+def run(input_filename, output_filename, ncores, is_cluster=True):
     """
     Runs a QE operation. Assumes input file already exists
     """
     with open(output_filename, 'w') as f:
-        p = subprocess.call(['mpirun', '/burg/opt/QE/7.2/bin/pw.x', '-inp', input_filename, '--use-hwthread-cpus'], stdout=f)
-        p.wait()
+        if is_cluster:
+            p = subprocess.call(['mpirun', '/burg/opt/QE/7.2/bin/pw.x', '-inp', input_filename, '--use-hwthread-cpus'], stdout=f)
+            p.wait()
+            # p = subprocess.call(['mpirun', '/burg/opt/QE/7.2/bin/pw.x', '-inp', input_filename, '--use-hwthread-cpus'], stdout=f)
+            #p = subprocess.call(['/burg/opt/QE/7.2/bin/pw.x', '-inp', input_filename], stdout=f)
+            #p.wait()
+        else:
+            p = subprocess.call(['q-e/bin/pw.x', '-inp', input_filename], stdout=f)
 
 def velocity(atomic_mass, energy, normal_angle_deg=0, polar_angle_deg=0, axis='x'):
     """
@@ -268,16 +274,13 @@ def pin_bottom_layers(atoms, nlayers, axis='z'):
         atoms: ase.Atoms object
         nlayers: The number of layers to fix/pin, starting from the bottom of the slab
     """
-    if axis == 'y':
-        ys = np.sort(np.unique(atoms.positions[:, 1]))
-        max_y = consecutive(ys)[nlayers - 1][0]
-        pinned_atoms = deepcopy(atoms)
-        mask = [atom for atom in atoms if atom.position[1] <= max_y]
-    if axis == 'x':
-        xs = np.sort(np.unique(atoms.positions[:, 0]))
-        max_x = consecutive(xs)[nlayers - 1][0]
-        pinned_atoms = deepcopy(atoms)
-        mask = [atom for atom in atoms if atom.position[0] <= max_x]  
+    if axis != 'x':
+        raise NotImplementedError
+
+    xs = np.sort(np.unique(atoms.positions[:, 0]))
+    max_x = consecutive(xs)[nlayers - 1][0]
+    pinned_atoms = deepcopy(atoms)
+    mask = [atom for atom in atoms if atom.position[0] <= max_x]  
     pinned_atoms.set_constraint(FixAtoms(mask=mask))
     return pinned_atoms
 
