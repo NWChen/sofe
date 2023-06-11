@@ -1,5 +1,5 @@
 
-     Program PWSCF v.7.2 starts on 11Jun2023 at  4:19:21 
+     Program PWSCF v.7.2 starts on 11Jun2023 at 13:11:36 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -13,9 +13,9 @@
      Parallel version (MPI), running on    12 processors
 
      MPI processes distributed on     1 nodes
-     75688 MiB available memory on the printing compute node when the environment starts
+     75807 MiB available memory on the printing compute node when the environment starts
 
-     Reading input from md_data/md_Hf5Nb2Ta10Zr5H_10steps_50eV_incident0_polar0.in
+     Reading input from md_data/md_Hf5Nb2Ta10Zr5H_10steps_50eV_incident0_polar30.in
 Warning: card &CELL ignored
 Warning: card / ignored
 
@@ -23,8 +23,6 @@ Warning: card / ignored
      Max number of different atomic species (ntypx) = 10
      Max number of k-points (npk) =  40000
      Max angular momentum in pseudopotentials (lmaxx) =  4
-
-     File outdir/pwscf.update deleted, as requested
 
      File outdir/pwscf.md deleted, as requested
 
@@ -226,7 +224,7 @@ Warning: card / ignored
      negative rho (up, down):  9.202E-01 9.202E-01
      Starting wfcs are  287 randomized atomic wfcs
 
-     total cpu time spent up to now is       23.4 secs
+     total cpu time spent up to now is       23.5 secs
 
      Self-consistent Calculation
 
@@ -236,7 +234,7 @@ Warning: card / ignored
 
      negative rho (up, down):  9.523E-01 9.523E-01
 
-     total cpu time spent up to now is       62.7 secs
+     total cpu time spent up to now is       64.6 secs
 
      total energy              =   -2932.99768458 Ry
      estimated scf accuracy    <     321.72424075 Ry
@@ -250,7 +248,7 @@ Warning: card / ignored
 
      negative rho (up, down):  8.880E-01 8.880E-01
 
-     total cpu time spent up to now is      103.3 secs
+     total cpu time spent up to now is      106.1 secs
 
      total energy              =   -2941.21112155 Ry
      estimated scf accuracy    <      47.14940084 Ry
@@ -264,7 +262,7 @@ Warning: card / ignored
 
      negative rho (up, down):  9.124E-01 9.122E-01
 
-     total cpu time spent up to now is      139.7 secs
+     total cpu time spent up to now is      143.1 secs
 
      total energy              =   -2941.68235792 Ry
      estimated scf accuracy    <      18.61760869 Ry
