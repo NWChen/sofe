@@ -70,8 +70,11 @@ def run(input_filename, output_filename, ncores, is_cluster=True):
         if is_cluster:
             args = ['mpirun', '/burg/opt/QE/7.2/bin/pw.x', '-inp', input_filename, '--use-hwthread-cpus']
         else:
-            args = ['mpirun', '-np', str(ncores), '--oversubscribe', 'q-e/bin/pw.x', '-inp', input_filename]
-            #args = ['mpirun', 'q-e/bin/pw.x', '-inp', input_filename, '--use-hwthread-cpus']
+            if ncores > 12:
+                print(f'Automatically oversubscribing for {ncores} cores')
+                args = ['mpirun', '-np', str(ncores), '--oversubscribe', 'q-e/bin/pw.x', '-inp', input_filename]
+            else:
+                args = ['mpirun', '-np', str(ncores), 'q-e/bin/pw.x', '-inp', input_filename]
 
         arg_str = ' '.join(args)
         print(f'Running command: {arg_str}')
@@ -349,8 +352,8 @@ def md(atoms, nsteps, dt, AXIS="x", initial_eV=None, incident_angle_deg=0, polar
             atoms,
             input_data=input_data,
             pseudopotentials=PSEUDOPOTENTIALS,
-            tstress=False,
-            tprnfor=False,
+            tstress=True,
+            tprnfor=True,
             kpts=None, # gamma k-points
         )
         if initial_eV:

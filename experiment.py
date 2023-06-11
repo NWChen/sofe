@@ -70,13 +70,12 @@ def setup(incident_angle_deg, polar_angle_deg):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--ncores')
-    parser.add_argument('--oversubscribe')
     parser.add_argument('--evs', help="Comma-delimited string of initial D energies in eV", type=str)
     args = parser.parse_args()
 
     eVs = [int(eV) for eV in args.evs.split(',')]
 
-    print(f'Using {ncores} cores')
+    print(f'Using {args.ncores} cores')
     counter = 0
 
     for INCIDENT_ANGLE_DEG in [45]:
