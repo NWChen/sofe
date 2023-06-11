@@ -41,7 +41,7 @@ class FileType(Enum):
     OUTPUT = 'out'
 
 
-def get_qe_filename(atoms, calc, filetype, suffix=''):
+def get_qe_filename(atoms, calc, filetype, suffix='', outdir='md_data'):
     """
     Returns a filename for a QE input/output file given an ase.Atoms object
     e.g. relax_Hf16Ta12Nb20Zr13H.in
@@ -49,7 +49,8 @@ def get_qe_filename(atoms, calc, filetype, suffix=''):
     assert isinstance(calc, Calculation)
     assert isinstance(filetype, FileType)
     _suffix = '_' + suffix if suffix else ''
-    return f'{calc.value}_{atoms.symbols}{_suffix}.{filetype.value}'
+    prefix = outdir + '/' if outdir else ''
+    return f'{prefix}{calc.value}_{atoms.symbols}{_suffix}.{filetype.value}'
 
 def output_to_atoms(output_filename):
     """
@@ -67,10 +68,11 @@ def run(input_filename, output_filename, ncores, is_cluster=True):
     """
     with open(output_filename, 'w') as f:
         if is_cluster:
-            args = ['mpirun', '-np', str(ncores), '/burg/opt/QE/7.2/bin/pw.x', '-inp', input_filename, '--use-hwthread-cpus']
+            args = ['mpirun', '/burg/opt/QE/7.2/bin/pw.x', '-inp', input_filename, '--use-hwthread-cpus']
         else:
             args = ['mpirun', '-np', str(ncores), 'q-e/bin/pw.x', '-inp', input_filename]
-        
+            #args = ['mpirun', 'q-e/bin/pw.x', '-inp', input_filename, '--use-hwthread-cpus']
+
         arg_str = ' '.join(args)
         print(f'Running command: {arg_str}')
         p = subprocess.call(args, stdout=f)
@@ -282,7 +284,7 @@ def pin_bottom_layers(atoms, nlayers, axis='x'):
 
     # Find the x values of the desired layers
     rounded_xs = np.round(atoms.positions[:, 0], decimals=0)
-    layer_xs = np.sort(np.unique(a))
+    layer_xs = np.sort(np.unique(rounded_xs))
     layer_xs = np.append(layer_xs, np.inf)
     max_x = layer_xs[nlayers] - 0.5 # TODO clean this code up, remove magic numbers
     
