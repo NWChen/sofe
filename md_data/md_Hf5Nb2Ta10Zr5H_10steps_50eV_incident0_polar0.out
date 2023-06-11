@@ -232,3 +232,17 @@ Warning: card / ignored
 
      iteration #  1     ecut=   120.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
+     ethr =  1.00E-02,  avg # of iterations =  3.0
+
+     negative rho (up, down):  9.523E-01 9.523E-01
+
+     total cpu time spent up to now is       62.7 secs
+
+     total energy              =   -2932.99768458 Ry
+     estimated scf accuracy    <     321.72424075 Ry
+
+     total magnetization       =     0.00 Bohr mag/cell
+     absolute magnetization    =     0.08 Bohr mag/cell
+
+     iteration #  2     ecut=   120.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
