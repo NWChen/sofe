@@ -117,7 +117,7 @@ def velocity(atomic_mass, energy, normal_angle_deg=0, polar_angle_deg=0, axis='x
     vy = planar_magnitude * np.cos(polar_angle_rad)
     vz = planar_magnitude * np.sin(polar_angle_rad)
     
-    return (-vx, vy, vz) # negate vx so that particle approaches the slab
+    return (-vx, -vy, -vz) # negate so that particle approaches the slab
 
 assert velocity(1., 100, 0, 0) == velocity(1., 100, 0, 360)
 assert np.all(np.isclose(
