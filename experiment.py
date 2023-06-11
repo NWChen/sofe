@@ -80,7 +80,9 @@ if __name__ == '__main__':
     counter = 0
 
     for INCIDENT_ANGLE_DEG in [45]:
-        for POLAR_ANGLE_DEG in [0, 180, 15]:
+        for POLAR_ANGLE_DEG in range(0, 181, 30):
+            if POLAR_ANGLE_DEG in {0, 180}:
+                continue
             for INITIAL_EV in eVs: #[50, 100]:
                 atoms = setup(INCIDENT_ANGLE_DEG, POLAR_ANGLE_DEG)
                 print(f'{counter+1}: Running MD for incident angle={INCIDENT_ANGLE_DEG}deg, polar angle={POLAR_ANGLE_DEG}deg, D eV={INITIAL_EV}eV. {N_STEPS} steps, {DT} integration timestep, starting {INITIAL_DISTANCE_A}angstrom away')
