@@ -73,6 +73,7 @@ if __name__ == '__main__':
     parser.add_argument('--evs', help="Comma-delimited string of initial D energies in eV", type=str)
     args = parser.parse_args()
 
+    ncores = int(args.ncores)
     eVs = [int(eV) for eV in args.evs.split(',')]
 
     print(f'Using {args.ncores} cores')
@@ -91,7 +92,7 @@ if __name__ == '__main__':
                     incident_angle_deg=INCIDENT_ANGLE_DEG,
                     polar_angle_deg=POLAR_ANGLE_DEG,
                     is_cluster=False,
-                    ncores=args.ncores
+                    ncores=ncores
                 )
                 sanitize(output_filename)
                 print('-------------------------------------------------------')
