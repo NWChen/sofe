@@ -70,7 +70,7 @@ def run(input_filename, output_filename, ncores, is_cluster=True):
         if is_cluster:
             args = ['mpirun', '/burg/opt/QE/7.2/bin/pw.x', '-inp', input_filename, '--use-hwthread-cpus']
         else:
-            args = ['mpirun', '-np', str(ncores), 'q-e/bin/pw.x', '-inp', input_filename]
+            args = ['mpirun', '-np', str(ncores), '--oversubscribe', 'q-e/bin/pw.x', '-inp', input_filename]
             #args = ['mpirun', 'q-e/bin/pw.x', '-inp', input_filename, '--use-hwthread-cpus']
 
         arg_str = ' '.join(args)
