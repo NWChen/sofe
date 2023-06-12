@@ -38,7 +38,7 @@ INITIAL_DISTANCE_A = 2.0
 AXIS = 'x'
 #DT = 0.2 * round(FS_TO_AU) # 0.2fs
 
-def setup(incident_angle_deg, polar_angle_deg):
+def setup(incident_angle_deg, polar_angle_deg, d_mass_amu=2.014):
     # Run relaxation, if needed
     if RUN_RELAXATION:
         slab = import_vasp('input/HfNbTaZr_8.vasp', truncate=False)
@@ -53,7 +53,7 @@ def setup(incident_angle_deg, polar_angle_deg):
 
     # Place the D atom in the center of the slab, `INITIAL_DISTANCE_A` Angstroms away
     DEUTERIUM_XYZ = get_D_position(atoms, initial_distance_a=INITIAL_DISTANCE_A, axis=AXIS, normal_angle_deg=incident_angle_deg, polar_angle_deg=polar_angle_deg)
-    deuterium = Atom('H', mass=DEUTERIUM_MASS_AMU, position=DEUTERIUM_XYZ)
+    deuterium = Atom('H', mass=d_mass_amu, position=DEUTERIUM_XYZ)
     atoms.append(deuterium)
 
     # Expand unit cell so that the D atom fits
@@ -74,6 +74,7 @@ if __name__ == '__main__':
     parser.add_argument('--polar', help="Comma-delimited string of polar angles in degrees", type=str)
     parser.add_argument('--dt', help='Timestep, in fs', type=float, default=0.2)
     parser.add_argument('--nsteps', help='Number of integration steps', type=int, default=20)
+    parser.add_argument('--dmass', help='D mass in AMU', type=float, default=DEUTERIUM_MASS_AMU)
     parser.add_argument('--velocitymul', help='Multiplier (alat?) for velocity', type=float, default=1.0)
     args = parser.parse_args()
 
@@ -84,6 +85,7 @@ if __name__ == '__main__':
     dt = float(args.dt) * round(FS_TO_AU)
     nsteps = int(args.nsteps)
     velocity_multiplier = float(args.velocitymul)
+    d_mass_amu = float(args.dmass)
 
     print(f'Using {args.ncores} cores, velocity multiplier {velocity_multiplier}')
     counter = 0
@@ -93,7 +95,7 @@ if __name__ == '__main__':
             #if POLAR_ANGLE_DEG in {0, 180}:
             #    continue
             for INITIAL_EV in eVs:
-                atoms = setup(INCIDENT_ANGLE_DEG, POLAR_ANGLE_DEG)
+                atoms = setup(INCIDENT_ANGLE_DEG, POLAR_ANGLE_DEG, d_mass_amu=d_mass_amu)
                 print(f'{counter+1}: Running MD for incident angle={INCIDENT_ANGLE_DEG}deg, polar angle={POLAR_ANGLE_DEG}deg, D eV={INITIAL_EV}eV. {nsteps} steps, {args.dt} integration timestep, starting {INITIAL_DISTANCE_A}angstrom away')
                 output_filename = md(
                     atoms,

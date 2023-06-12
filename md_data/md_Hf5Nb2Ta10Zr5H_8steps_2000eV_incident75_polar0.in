@@ -1,6 +1,6 @@
 &CONTROL
    calculation      = 'md'
-   nstep            = 12
+   nstep            = 8
    tstress          = .true.
    tprnfor          = .true.
    dt               = 2.1
@@ -42,7 +42,7 @@ Hf  178.49 hf_pbe_v1.uspp.F.UPF
 Nb  92.90637 nb_pbe_v1.uspp.F.UPF
 Ta  180.94788 ta_pbe_v1.uspp.F.UPF
 Zr  91.224 zr_pbe_v1.uspp.F.UPF
-H  131.0 h_pbe_v1.4.uspp.F.UPF
+H  2.014 h_pbe_v1.4.uspp.F.UPF
 
 K_POINTS gamma
 
@@ -99,4 +99,4 @@ Zr 0.0 0.0 0.0
 Zr 0.0 0.0 0.0
 Zr 0.0 0.0 0.0
 Zr 0.0 0.0 0.0
-H -0.08130 -0.30341 -0.00000
+H -0.11497 -0.42908 -0.00000
