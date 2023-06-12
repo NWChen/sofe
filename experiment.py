@@ -36,7 +36,6 @@ VACUUM = 2.0
 DEUTERIUM_MASS_AMU = 2.014
 INITIAL_DISTANCE_A = 2.0
 AXIS = 'x'
-N_STEPS = 20
 #DT = 0.2 * round(FS_TO_AU) # 0.2fs
 
 def setup(incident_angle_deg, polar_angle_deg):
@@ -73,6 +72,7 @@ if __name__ == '__main__':
     parser.add_argument('--evs', help="Comma-delimited string of initial D energies in eV", type=str)
     parser.add_argument('--incident', help="Comma-delimited string of incident angles in degrees", type=str)
     parser.add_argument('--dt', help='Timestep, in fs', type=float, default=0.2)
+    parser.add_argument('--nsteps', help='Number of integration steps', type=int, default=20)
     parser.add_argument('--velocitymul', help='Multiplier (alat?) for velocity', type=float, default=1.0)
     args = parser.parse_args()
 
@@ -80,6 +80,7 @@ if __name__ == '__main__':
     incident_angles = [int(angle) for angle in args.incident.split(',')]
     eVs = [int(eV) for eV in args.evs.split(',')]
     dt = float(args.dt) * round(FS_TO_AU)
+    nsteps = int(args.nsteps)
     velocity_multiplier = float(args.velocitymul)
 
     print(f'Using {args.ncores} cores, velocity multiplier {velocity_multiplier}')
@@ -91,10 +92,10 @@ if __name__ == '__main__':
             #    continue
             for INITIAL_EV in eVs:
                 atoms = setup(INCIDENT_ANGLE_DEG, POLAR_ANGLE_DEG)
-                print(f'{counter+1}: Running MD for incident angle={INCIDENT_ANGLE_DEG}deg, polar angle={POLAR_ANGLE_DEG}deg, D eV={INITIAL_EV}eV. {N_STEPS} steps, {args.dt} integration timestep, starting {INITIAL_DISTANCE_A}angstrom away')
+                print(f'{counter+1}: Running MD for incident angle={INCIDENT_ANGLE_DEG}deg, polar angle={POLAR_ANGLE_DEG}deg, D eV={INITIAL_EV}eV. {nsteps} steps, {args.dt} integration timestep, starting {INITIAL_DISTANCE_A}angstrom away')
                 output_filename = md(
                     atoms,
-                    nsteps=N_STEPS,
+                    nsteps=nsteps,
                     dt=dt,
                     initial_eV=INITIAL_EV,
                     incident_angle_deg=INCIDENT_ANGLE_DEG,
