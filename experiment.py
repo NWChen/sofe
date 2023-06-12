@@ -71,6 +71,7 @@ if __name__ == '__main__':
     parser.add_argument('--ncores')
     parser.add_argument('--evs', help="Comma-delimited string of initial D energies in eV", type=str)
     parser.add_argument('--incident', help="Comma-delimited string of incident angles in degrees", type=str)
+    parser.add_argument('--polar', help="Comma-delimited string of polar angles in degrees", type=str)
     parser.add_argument('--dt', help='Timestep, in fs', type=float, default=0.2)
     parser.add_argument('--nsteps', help='Number of integration steps', type=int, default=20)
     parser.add_argument('--velocitymul', help='Multiplier (alat?) for velocity', type=float, default=1.0)
@@ -78,6 +79,7 @@ if __name__ == '__main__':
 
     ncores = int(args.ncores)
     incident_angles = [int(angle) for angle in args.incident.split(',')]
+    polar_angles = [int(angle) for angle in args.polar.split(',')]
     eVs = [int(eV) for eV in args.evs.split(',')]
     dt = float(args.dt) * round(FS_TO_AU)
     nsteps = int(args.nsteps)
@@ -87,7 +89,7 @@ if __name__ == '__main__':
     counter = 0
 
     for INCIDENT_ANGLE_DEG in incident_angles:
-        for POLAR_ANGLE_DEG in range(0, 181, 30):
+        for POLAR_ANGLE_DEG in (polar_angles if polar_angles else range(0, 181, 30)):
             #if POLAR_ANGLE_DEG in {0, 180}:
             #    continue
             for INITIAL_EV in eVs:
