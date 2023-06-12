@@ -34,10 +34,10 @@ FS_TO_AU = 1e-15 / (4.8378 * 1e-17)
 RUN_RELAXATION = False
 VACUUM = 2.0
 DEUTERIUM_MASS_AMU = 2.014
-INITIAL_DISTANCE_A = 1.6
+INITIAL_DISTANCE_A = 2.0
 AXIS = 'x'
 N_STEPS = 20
-DT = 0.2 * round(FS_TO_AU) # 0.2fs
+#DT = 0.2 * round(FS_TO_AU) # 0.2fs
 
 def setup(incident_angle_deg, polar_angle_deg):
     # Run relaxation, if needed
@@ -50,7 +50,7 @@ def setup(incident_angle_deg, polar_angle_deg):
     slab = output_to_atoms(relax_output_filename if RUN_RELAXATION else 'relax_data/relax_Hf5Nb2Ta10Zr5.out') # This slab is the result of relaxing a 22-atom crystal
     atoms = deepcopy(slab)
     atoms.center(vacuum=VACUUM, axis=2)
-    atoms = pin_bottom_layers(atoms, nlayers=1, axis=AXIS)
+    atoms = pin_bottom_layers(atoms, nlayers=0, axis=AXIS)
 
     # Place the D atom in the center of the slab, `INITIAL_DISTANCE_A` Angstroms away
     DEUTERIUM_XYZ = get_D_position(atoms, initial_distance_a=INITIAL_DISTANCE_A, axis=AXIS, normal_angle_deg=incident_angle_deg, polar_angle_deg=polar_angle_deg)
@@ -71,27 +71,31 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--ncores')
     parser.add_argument('--evs', help="Comma-delimited string of initial D energies in eV", type=str)
+    parser.add_argument('--incident', help="Comma-delimited string of incident angles in degrees", type=str)
+    parser.add_argument('--dt', help='Timestep, in fs', type=float, default=0.2)
     parser.add_argument('--velocitymul', help='Multiplier (alat?) for velocity', type=float, default=1.0)
     args = parser.parse_args()
 
     ncores = int(args.ncores)
+    incident_angles = [int(angle) for angle in args.incident.split(',')]
     eVs = [int(eV) for eV in args.evs.split(',')]
+    dt = float(args.dt) * round(FS_TO_AU)
     velocity_multiplier = float(args.velocitymul)
 
     print(f'Using {args.ncores} cores, velocity multiplier {velocity_multiplier}')
     counter = 0
 
-    for INCIDENT_ANGLE_DEG in [45]:
+    for INCIDENT_ANGLE_DEG in incident_angles:
         for POLAR_ANGLE_DEG in range(0, 181, 30):
-            if POLAR_ANGLE_DEG in {0, 180}:
-                continue
-            for INITIAL_EV in eVs: #[50, 100]:
+            #if POLAR_ANGLE_DEG in {0, 180}:
+            #    continue
+            for INITIAL_EV in eVs:
                 atoms = setup(INCIDENT_ANGLE_DEG, POLAR_ANGLE_DEG)
-                print(f'{counter+1}: Running MD for incident angle={INCIDENT_ANGLE_DEG}deg, polar angle={POLAR_ANGLE_DEG}deg, D eV={INITIAL_EV}eV. {N_STEPS} steps, {DT} integration timestep, starting {INITIAL_DISTANCE_A}angstrom away')
+                print(f'{counter+1}: Running MD for incident angle={INCIDENT_ANGLE_DEG}deg, polar angle={POLAR_ANGLE_DEG}deg, D eV={INITIAL_EV}eV. {N_STEPS} steps, {args.dt} integration timestep, starting {INITIAL_DISTANCE_A}angstrom away')
                 output_filename = md(
                     atoms,
                     nsteps=N_STEPS,
-                    dt=DT,
+                    dt=dt,
                     initial_eV=INITIAL_EV,
                     incident_angle_deg=INCIDENT_ANGLE_DEG,
                     polar_angle_deg=POLAR_ANGLE_DEG,
