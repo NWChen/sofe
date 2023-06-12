@@ -1,5 +1,5 @@
 
-     Program PWSCF v.7.2 starts on 12Jun2023 at  0:59:59 
+     Program PWSCF v.7.2 starts on 12Jun2023 at  0: 3:37 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -13,9 +13,9 @@
      Parallel version (MPI), running on    42 processors
 
      MPI processes distributed on     1 nodes
-     185293 MiB available memory on the printing compute node when the environment starts
+     185365 MiB available memory on the printing compute node when the environment starts
 
-     Reading input from md_data/md_Hf5Nb2Ta10Zr5H_20steps_100eV_incident45_polar60.in
+     Reading input from md_data/md_Hf5Nb2Ta10Zr5H_20steps_100eV_incident45_polar30.in
 Warning: card &CELL ignored
 Warning: card / ignored
 
@@ -23,8 +23,6 @@ Warning: card / ignored
      Max number of different atomic species (ntypx) = 10
      Max number of k-points (npk) =  40000
      Max angular momentum in pseudopotentials (lmaxx) =  4
-
-     File outdir/pwscf.md deleted, as requested
 
      gamma-point specific algorithms are used
 
@@ -197,7 +195,7 @@ Warning: card / ignored
         20           Zr  tau(  20) = (   0.1452442   0.5098505   0.9543040  )
         21           Zr  tau(  21) = (   0.4796447   0.5060981   0.2341920  )
         22           Zr  tau(  22) = (   0.4800486   0.5098505   0.9543040  )
-        23           H   tau(  23) = (   0.6161590   0.5744362   0.7086623  )
+        23           H   tau(  23) = (   0.6161590   0.6229269   0.6601716  )
 
      number of k points=     1  Gaussian smearing, width (Ry)=  0.0220
                        cart. coord. in units 2pi/alat
@@ -211,11 +209,11 @@ Warning: card / ignored
 
      Check: negative core charge=   -0.000002
      Generating pointlists ...
-     new r_m :   0.1222 (alat units)  1.9717 (a.u.) for type    1
+     new r_m :   0.1181 (alat units)  1.9052 (a.u.) for type    1
      new r_m :   0.1201 (alat units)  1.9374 (a.u.) for type    2
-     new r_m :   0.0773 (alat units)  1.2475 (a.u.) for type    3
-     new r_m :   0.1189 (alat units)  1.9183 (a.u.) for type    4
-     new r_m :   0.0773 (alat units)  1.2475 (a.u.) for type    5
+     new r_m :   0.0773 (alat units)  1.2471 (a.u.) for type    3
+     new r_m :   0.1216 (alat units)  1.9625 (a.u.) for type    4
+     new r_m :   0.0773 (alat units)  1.2471 (a.u.) for type    5
 
      Initial potential from superposition of free atoms
 
@@ -224,7 +222,7 @@ Warning: card / ignored
      negative rho (up, down):  9.226E-01 9.226E-01
      Starting wfcs are  287 randomized atomic wfcs
 
-     total cpu time spent up to now is       11.1 secs
+     total cpu time spent up to now is       11.4 secs
 
      Self-consistent Calculation
 
@@ -232,29 +230,29 @@ Warning: card / ignored
      Davidson diagonalization with overlap
      ethr =  1.00E-02,  avg # of iterations =  2.0
 
-     negative rho (up, down):  9.861E-01 9.861E-01
+     negative rho (up, down):  9.852E-01 9.851E-01
 
-     total cpu time spent up to now is       40.0 secs
+     total cpu time spent up to now is       27.4 secs
 
-     total energy              =   -2931.88385279 Ry
-     estimated scf accuracy    <     287.28319107 Ry
+     total energy              =   -2931.88113744 Ry
+     estimated scf accuracy    <     287.24461499 Ry
 
-     total magnetization       =     0.00 Bohr mag/cell
+     total magnetization       =    -0.00 Bohr mag/cell
      absolute magnetization    =     0.11 Bohr mag/cell
 
      iteration #  2     ecut=   120.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  1.00E-02,  avg # of iterations =  4.5
+     ethr =  1.00E-02,  avg # of iterations =  5.0
 
-     negative rho (up, down):  9.428E-01 9.451E-01
+     negative rho (up, down):  9.444E-01 9.451E-01
 
-     total cpu time spent up to now is       78.2 secs
+     total cpu time spent up to now is       44.6 secs
 
-     total energy              =   -2942.16712040 Ry
-     estimated scf accuracy    <      35.01013178 Ry
+     total energy              =   -2942.19949088 Ry
+     estimated scf accuracy    <      34.81744859 Ry
 
-     total magnetization       =    -0.01 Bohr mag/cell
-     absolute magnetization    =     0.53 Bohr mag/cell
+     total magnetization       =    -0.06 Bohr mag/cell
+     absolute magnetization    =     0.39 Bohr mag/cell
 
      iteration #  3     ecut=   120.00 Ry     beta= 0.70
      Davidson diagonalization with overlap

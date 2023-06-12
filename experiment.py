@@ -71,12 +71,14 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--ncores')
     parser.add_argument('--evs', help="Comma-delimited string of initial D energies in eV", type=str)
+    parser.add_argument('--velocitymul', help='Multiplier (alat?) for velocity', type=float, default=1.0)
     args = parser.parse_args()
 
     ncores = int(args.ncores)
     eVs = [int(eV) for eV in args.evs.split(',')]
+    velocity_multiplier = float(args.velocitymul)
 
-    print(f'Using {args.ncores} cores')
+    print(f'Using {args.ncores} cores, velocity multiplier {velocity_multiplier}')
     counter = 0
 
     for INCIDENT_ANGLE_DEG in [45]:
@@ -94,7 +96,8 @@ if __name__ == '__main__':
                     incident_angle_deg=INCIDENT_ANGLE_DEG,
                     polar_angle_deg=POLAR_ANGLE_DEG,
                     is_cluster=False,
-                    ncores=ncores
+                    ncores=ncores,
+                    velocity_multiplier=velocity_multiplier
                 )
                 sanitize(output_filename)
                 print('-------------------------------------------------------')

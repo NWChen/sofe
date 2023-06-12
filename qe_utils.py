@@ -85,7 +85,7 @@ def run(input_filename, output_filename, ncores, is_cluster=True):
         # p = subprocess.call(['mpirun', '/burg/opt/QE/7.2/bin/pw.x', '-inp', input_filename, '--use-hwthread-cpus'], stdout=f)
         #p = subprocess.call(['/burg/opt/QE/7.2/bin/pw.x', '-inp', input_filename], stdout=f)
 
-def velocity(atomic_mass, energy, normal_angle_deg=0, polar_angle_deg=0, axis='x'):
+def velocity(atomic_mass, energy, normal_angle_deg=0, polar_angle_deg=0, axis='x', multiplier=1.0):
     """
     Computes the velocity of an atom in Hartree atomic units, given the atomic mass in atomic units and the energy in electronvolts.
 
@@ -110,6 +110,7 @@ def velocity(atomic_mass, energy, normal_angle_deg=0, polar_angle_deg=0, axis='x
 
     # Convert the velocity to Hartree atomic units.
     velocity_ha = velocity_ms / 2.187691e6
+    velocity_ha *= multiplier
     
     normal_angle_rad, polar_angle_rad = np.radians(normal_angle_deg), np.radians(polar_angle_deg)
     planar_magnitude = velocity_ha * np.sin(normal_angle_rad)
@@ -297,7 +298,7 @@ def pin_bottom_layers(atoms, nlayers, axis='x'):
     pinned_atoms.set_constraint(FixAtoms(mask=mask))
     return pinned_atoms
 
-def md(atoms, nsteps, dt, AXIS="x", initial_eV=None, incident_angle_deg=0, polar_angle_deg=0, suffix=None, is_cluster=True, ncores=12):
+def md(atoms, nsteps, dt, AXIS="x", initial_eV=None, incident_angle_deg=0, polar_angle_deg=0, suffix=None, is_cluster=True, ncores=12, velocity_multiplier=1):
     suffix = f'{nsteps}steps_{initial_eV}eV_incident{incident_angle_deg}_polar{polar_angle_deg}' + (f'_{suffix}' if suffix else '')
     input_filename = get_qe_filename(atoms, Calculation.MD, FileType.INPUT, suffix=suffix)
     output_filename = get_qe_filename(atoms, Calculation.MD, FileType.OUTPUT, suffix=suffix)
@@ -310,7 +311,7 @@ def md(atoms, nsteps, dt, AXIS="x", initial_eV=None, incident_angle_deg=0, polar
                 atomic_velocities_str += f'{el} 0.0 0.0 0.0\n'
 
         DEUTERIUM_MASS_AMU = 2.014
-        vx_au, vy_au, vz_au = velocity(DEUTERIUM_MASS_AMU, initial_eV, normal_angle_deg=incident_angle_deg, polar_angle_deg=polar_angle_deg)
+        vx_au, vy_au, vz_au = velocity(DEUTERIUM_MASS_AMU, initial_eV, normal_angle_deg=incident_angle_deg, polar_angle_deg=polar_angle_deg, multiplier=velocity_multiplier)
         if AXIS == 'x': # TODO this code is dogshit, clean it up
             format_str = 'H {:.5f} {:.5f} {:.5f}'
         else:
