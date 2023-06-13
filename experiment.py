@@ -96,7 +96,7 @@ if __name__ == '__main__':
             #    continue
             for INITIAL_EV in eVs:
                 atoms = setup(INCIDENT_ANGLE_DEG, POLAR_ANGLE_DEG, d_mass_amu=d_mass_amu)
-                print(f'{counter+1}: Running MD for incident angle={INCIDENT_ANGLE_DEG}deg, polar angle={POLAR_ANGLE_DEG}deg, D eV={INITIAL_EV}eV. {nsteps} steps, {args.dt} integration timestep, starting {INITIAL_DISTANCE_A}angstrom away')
+                print(f'{counter+1}: Running MD for incident angle={INCIDENT_ANGLE_DEG}deg, polar angle={POLAR_ANGLE_DEG}deg, D eV={INITIAL_EV}eV. {nsteps} steps, {args.dt} integration timestep, starting {INITIAL_DISTANCE_A}angstrom away, D mass={d_mass_amu}AMU')
                 output_filename = md(
                     atoms,
                     nsteps=nsteps,
