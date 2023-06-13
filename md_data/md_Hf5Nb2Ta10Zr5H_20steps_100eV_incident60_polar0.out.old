@@ -405,29 +405,29 @@ Warning: card / ignored
      negative rho (up, down):  9.088E-01 9.088E-01
 
      Magnetic moment per site  (integrated on atomic sphere of radius R)
-     atom   1 (R=0.074)  charge=  5.9339    0.0001
-     atom   2 (R=0.074)  charge=  5.8660    0.0001
-     atom   3 (R=0.074)  charge=  5.8649   -0.0000
-     atom   4 (R=0.074)  charge=  5.8650   -0.0000
-     atom   5 (R=0.074)  charge=  5.8807    0.0001
-     atom   6 (R=0.110)  charge= 10.3457    0.0000
-     atom   7 (R=0.110)  charge= 10.3485    0.0007
-     atom   8 (R=0.088)  charge=  8.1223   -0.0000
-     atom   9 (R=0.088)  charge=  8.1194    0.0001
-     atom  10 (R=0.088)  charge=  8.1026    0.0014
-     atom  11 (R=0.088)  charge=  8.0985    0.0010
-     atom  12 (R=0.088)  charge=  8.1012    0.0018
-     atom  13 (R=0.088)  charge=  8.1018    0.0005
-     atom  14 (R=0.088)  charge=  8.1029    0.0011
-     atom  15 (R=0.088)  charge=  8.0974    0.0006
-     atom  16 (R=0.088)  charge=  8.1056    0.0032
-     atom  17 (R=0.088)  charge=  8.1033    0.0012
-     atom  18 (R=0.111)  charge=  9.4538   -0.0002
-     atom  19 (R=0.111)  charge=  9.0024    0.0052
-     atom  20 (R=0.111)  charge=  8.9941   -0.0016
-     atom  21 (R=0.111)  charge=  9.0072    0.0055
-     atom  22 (R=0.111)  charge=  8.9959   -0.0016
-     atom  23 (R=0.074)  charge=  0.9756    0.0001
+     atom   1 (R=0.074)  charge=  5.9339  magn=  0.0001
+     atom   2 (R=0.074)  charge=  5.8660  magn=  0.0001
+     atom   3 (R=0.074)  charge=  5.8649  magn= -0.0000
+     atom   4 (R=0.074)  charge=  5.8650  magn= -0.0000
+     atom   5 (R=0.074)  charge=  5.8807  magn=  0.0001
+     atom   6 (R=0.110)  charge= 10.3457  magn=  0.0000
+     atom   7 (R=0.110)  charge= 10.3485  magn=  0.0007
+     atom   8 (R=0.088)  charge=  8.1223  magn= -0.0000
+     atom   9 (R=0.088)  charge=  8.1194  magn=  0.0001
+     atom  10 (R=0.088)  charge=  8.1026  magn=  0.0014
+     atom  11 (R=0.088)  charge=  8.0985  magn=  0.0010
+     atom  12 (R=0.088)  charge=  8.1012  magn=  0.0018
+     atom  13 (R=0.088)  charge=  8.1018  magn=  0.0005
+     atom  14 (R=0.088)  charge=  8.1029  magn=  0.0011
+     atom  15 (R=0.088)  charge=  8.0974  magn=  0.0006
+     atom  16 (R=0.088)  charge=  8.1056  magn=  0.0032
+     atom  17 (R=0.088)  charge=  8.1033  magn=  0.0012
+     atom  18 (R=0.111)  charge=  9.4538  magn= -0.0002
+     atom  19 (R=0.111)  charge=  9.0024  magn=  0.0052
+     atom  20 (R=0.111)  charge=  8.9941  magn= -0.0016
+     atom  21 (R=0.111)  charge=  9.0072  magn=  0.0055
+     atom  22 (R=0.111)  charge=  8.9959  magn= -0.0016
+     atom  23 (R=0.074)  charge=  0.9756  magn=  0.0001
 
      total cpu time spent up to now is      325.9 secs
 
@@ -805,29 +805,29 @@ H             5.0264944335        5.8910490608        5.0721733936
      negative rho (up, down):  9.089E-01 9.089E-01
 
      Magnetic moment per site  (integrated on atomic sphere of radius R)
-     atom   1 (R=0.074)  charge=  5.9343    0.0000
-     atom   2 (R=0.074)  charge=  5.8654    0.0001
-     atom   3 (R=0.074)  charge=  5.8646    0.0001
-     atom   4 (R=0.074)  charge=  5.8650    0.0000
-     atom   5 (R=0.074)  charge=  5.8765    0.0001
-     atom   6 (R=0.110)  charge= 10.3502   -0.0000
-     atom   7 (R=0.110)  charge= 10.3482    0.0004
-     atom   8 (R=0.079)  charge=  7.1092    0.0000
-     atom   9 (R=0.079)  charge=  7.1174    0.0001
-     atom  10 (R=0.079)  charge=  7.0934    0.0009
-     atom  11 (R=0.079)  charge=  7.0929    0.0007
-     atom  12 (R=0.079)  charge=  7.0956    0.0013
-     atom  13 (R=0.079)  charge=  7.0933    0.0004
-     atom  14 (R=0.079)  charge=  7.0933    0.0008
-     atom  15 (R=0.079)  charge=  7.0935    0.0005
-     atom  16 (R=0.079)  charge=  7.0952    0.0020
-     atom  17 (R=0.079)  charge=  7.0926    0.0007
-     atom  18 (R=0.111)  charge=  9.4556   -0.0001
-     atom  19 (R=0.111)  charge=  8.9899    0.0037
-     atom  20 (R=0.111)  charge=  8.9951   -0.0007
-     atom  21 (R=0.111)  charge=  8.9924    0.0041
-     atom  22 (R=0.111)  charge=  8.9982   -0.0007
-     atom  23 (R=0.074)  charge=  1.0020    0.0001
+     atom   1 (R=0.074)  charge=  5.9343  magn=  0.0000
+     atom   2 (R=0.074)  charge=  5.8654  magn=  0.0001
+     atom   3 (R=0.074)  charge=  5.8646  magn=  0.0001
+     atom   4 (R=0.074)  charge=  5.8650  magn=  0.0000
+     atom   5 (R=0.074)  charge=  5.8765  magn=  0.0001
+     atom   6 (R=0.110)  charge= 10.3502  magn= -0.0000
+     atom   7 (R=0.110)  charge= 10.3482  magn=  0.0004
+     atom   8 (R=0.079)  charge=  7.1092  magn=  0.0000
+     atom   9 (R=0.079)  charge=  7.1174  magn=  0.0001
+     atom  10 (R=0.079)  charge=  7.0934  magn=  0.0009
+     atom  11 (R=0.079)  charge=  7.0929  magn=  0.0007
+     atom  12 (R=0.079)  charge=  7.0956  magn=  0.0013
+     atom  13 (R=0.079)  charge=  7.0933  magn=  0.0004
+     atom  14 (R=0.079)  charge=  7.0933  magn=  0.0008
+     atom  15 (R=0.079)  charge=  7.0935  magn=  0.0005
+     atom  16 (R=0.079)  charge=  7.0952  magn=  0.0020
+     atom  17 (R=0.079)  charge=  7.0926  magn=  0.0007
+     atom  18 (R=0.111)  charge=  9.4556  magn= -0.0001
+     atom  19 (R=0.111)  charge=  8.9899  magn=  0.0037
+     atom  20 (R=0.111)  charge=  8.9951  magn= -0.0007
+     atom  21 (R=0.111)  charge=  8.9924  magn=  0.0041
+     atom  22 (R=0.111)  charge=  8.9982  magn= -0.0007
+     atom  23 (R=0.074)  charge=  1.0020  magn=  0.0001
 
      total cpu time spent up to now is      485.8 secs
 
@@ -1192,29 +1192,29 @@ H             4.9227787705        5.7099028982        5.0721451521
      negative rho (up, down):  9.089E-01 9.089E-01
 
      Magnetic moment per site  (integrated on atomic sphere of radius R)
-     atom   1 (R=0.074)  charge=  5.9344    0.0000
-     atom   2 (R=0.074)  charge=  5.8661    0.0000
-     atom   3 (R=0.074)  charge=  5.8651    0.0001
-     atom   4 (R=0.074)  charge=  5.8660    0.0000
-     atom   5 (R=0.074)  charge=  5.8731    0.0001
-     atom   6 (R=0.110)  charge= 10.3485    0.0000
-     atom   7 (R=0.110)  charge= 10.3475    0.0003
-     atom   8 (R=0.070)  charge=  5.8170    0.0000
-     atom   9 (R=0.070)  charge=  5.8361    0.0001
-     atom  10 (R=0.070)  charge=  5.8040    0.0006
-     atom  11 (R=0.070)  charge=  5.8031    0.0005
-     atom  12 (R=0.070)  charge=  5.8006    0.0008
-     atom  13 (R=0.070)  charge=  5.8056    0.0003
-     atom  14 (R=0.070)  charge=  5.8014    0.0005
-     atom  15 (R=0.070)  charge=  5.8000    0.0003
-     atom  16 (R=0.070)  charge=  5.8014    0.0012
-     atom  17 (R=0.070)  charge=  5.8029    0.0005
-     atom  18 (R=0.111)  charge=  9.4550   -0.0001
-     atom  19 (R=0.111)  charge=  9.0010    0.0030
-     atom  20 (R=0.111)  charge=  8.9926   -0.0003
-     atom  21 (R=0.111)  charge=  9.0084    0.0034
-     atom  22 (R=0.111)  charge=  8.9956   -0.0001
-     atom  23 (R=0.070)  charge=  0.9816    0.0001
+     atom   1 (R=0.074)  charge=  5.9344  magn=  0.0000
+     atom   2 (R=0.074)  charge=  5.8661  magn=  0.0000
+     atom   3 (R=0.074)  charge=  5.8651  magn=  0.0001
+     atom   4 (R=0.074)  charge=  5.8660  magn=  0.0000
+     atom   5 (R=0.074)  charge=  5.8731  magn=  0.0001
+     atom   6 (R=0.110)  charge= 10.3485  magn=  0.0000
+     atom   7 (R=0.110)  charge= 10.3475  magn=  0.0003
+     atom   8 (R=0.070)  charge=  5.8170  magn=  0.0000
+     atom   9 (R=0.070)  charge=  5.8361  magn=  0.0001
+     atom  10 (R=0.070)  charge=  5.8040  magn=  0.0006
+     atom  11 (R=0.070)  charge=  5.8031  magn=  0.0005
+     atom  12 (R=0.070)  charge=  5.8006  magn=  0.0008
+     atom  13 (R=0.070)  charge=  5.8056  magn=  0.0003
+     atom  14 (R=0.070)  charge=  5.8014  magn=  0.0005
+     atom  15 (R=0.070)  charge=  5.8000  magn=  0.0003
+     atom  16 (R=0.070)  charge=  5.8014  magn=  0.0012
+     atom  17 (R=0.070)  charge=  5.8029  magn=  0.0005
+     atom  18 (R=0.111)  charge=  9.4550  magn= -0.0001
+     atom  19 (R=0.111)  charge=  9.0010  magn=  0.0030
+     atom  20 (R=0.111)  charge=  8.9926  magn= -0.0003
+     atom  21 (R=0.111)  charge=  9.0084  magn=  0.0034
+     atom  22 (R=0.111)  charge=  8.9956  magn= -0.0001
+     atom  23 (R=0.070)  charge=  0.9816  magn=  0.0001
 
      total cpu time spent up to now is      653.3 secs
 
@@ -1593,29 +1593,29 @@ H             4.8197026430        5.5293313197        5.0721042070
      negative rho (up, down):  9.086E-01 9.086E-01
 
      Magnetic moment per site  (integrated on atomic sphere of radius R)
-     atom   1 (R=0.074)  charge=  5.9339    0.0000
-     atom   2 (R=0.074)  charge=  5.8653    0.0000
-     atom   3 (R=0.074)  charge=  5.8647    0.0001
-     atom   4 (R=0.074)  charge=  5.8660    0.0000
-     atom   5 (R=0.074)  charge=  5.8681    0.0001
-     atom   6 (R=0.110)  charge= 10.3493    0.0000
-     atom   7 (R=0.110)  charge= 10.3466    0.0002
-     atom   8 (R=0.061)  charge=  4.2424   -0.0000
-     atom   9 (R=0.061)  charge=  4.2673    0.0000
-     atom  10 (R=0.061)  charge=  4.2336    0.0003
-     atom  11 (R=0.061)  charge=  4.2329    0.0002
-     atom  12 (R=0.061)  charge=  4.2298    0.0004
-     atom  13 (R=0.061)  charge=  4.2352    0.0002
-     atom  14 (R=0.061)  charge=  4.2304    0.0003
-     atom  15 (R=0.061)  charge=  4.2301    0.0002
-     atom  16 (R=0.061)  charge=  4.2283    0.0006
-     atom  17 (R=0.061)  charge=  4.2312    0.0002
-     atom  18 (R=0.111)  charge=  9.4536   -0.0001
-     atom  19 (R=0.111)  charge=  8.9931    0.0020
-     atom  20 (R=0.111)  charge=  8.9952    0.0000
-     atom  21 (R=0.111)  charge=  8.9969    0.0024
-     atom  22 (R=0.111)  charge=  8.9973    0.0003
-     atom  23 (R=0.061)  charge=  0.8879    0.0000
+     atom   1 (R=0.074)  charge=  5.9339  magn=  0.0000
+     atom   2 (R=0.074)  charge=  5.8653  magn=  0.0000
+     atom   3 (R=0.074)  charge=  5.8647  magn=  0.0001
+     atom   4 (R=0.074)  charge=  5.8660  magn=  0.0000
+     atom   5 (R=0.074)  charge=  5.8681  magn=  0.0001
+     atom   6 (R=0.110)  charge= 10.3493  magn=  0.0000
+     atom   7 (R=0.110)  charge= 10.3466  magn=  0.0002
+     atom   8 (R=0.061)  charge=  4.2424  magn= -0.0000
+     atom   9 (R=0.061)  charge=  4.2673  magn=  0.0000
+     atom  10 (R=0.061)  charge=  4.2336  magn=  0.0003
+     atom  11 (R=0.061)  charge=  4.2329  magn=  0.0002
+     atom  12 (R=0.061)  charge=  4.2298  magn=  0.0004
+     atom  13 (R=0.061)  charge=  4.2352  magn=  0.0002
+     atom  14 (R=0.061)  charge=  4.2304  magn=  0.0003
+     atom  15 (R=0.061)  charge=  4.2301  magn=  0.0002
+     atom  16 (R=0.061)  charge=  4.2283  magn=  0.0006
+     atom  17 (R=0.061)  charge=  4.2312  magn=  0.0002
+     atom  18 (R=0.111)  charge=  9.4536  magn= -0.0001
+     atom  19 (R=0.111)  charge=  8.9931  magn=  0.0020
+     atom  20 (R=0.111)  charge=  8.9952  magn=  0.0000
+     atom  21 (R=0.111)  charge=  8.9969  magn=  0.0024
+     atom  22 (R=0.111)  charge=  8.9973  magn=  0.0003
+     atom  23 (R=0.061)  charge=  0.8879  magn=  0.0000
 
      total cpu time spent up to now is      862.9 secs
 
@@ -1994,29 +1994,29 @@ H             4.7179546537        5.3506801007        5.0720362313
      negative rho (up, down):  9.081E-01 9.081E-01
 
      Magnetic moment per site  (integrated on atomic sphere of radius R)
-     atom   1 (R=0.074)  charge=  5.9334    0.0000
-     atom   2 (R=0.074)  charge=  5.8652    0.0000
-     atom   3 (R=0.074)  charge=  5.8648    0.0000
-     atom   4 (R=0.074)  charge=  5.8666    0.0000
-     atom   5 (R=0.074)  charge=  5.8655    0.0000
-     atom   6 (R=0.110)  charge= 10.3491    0.0000
-     atom   7 (R=0.110)  charge= 10.3453    0.0001
-     atom   8 (R=0.052)  charge=  2.5628   -0.0000
-     atom   9 (R=0.052)  charge=  2.5822    0.0000
-     atom  10 (R=0.052)  charge=  2.5551    0.0001
-     atom  11 (R=0.052)  charge=  2.5542    0.0001
-     atom  12 (R=0.052)  charge=  2.5542    0.0002
-     atom  13 (R=0.052)  charge=  2.5541    0.0001
-     atom  14 (R=0.052)  charge=  2.5561    0.0001
-     atom  15 (R=0.052)  charge=  2.5560    0.0001
-     atom  16 (R=0.052)  charge=  2.5580    0.0002
-     atom  17 (R=0.052)  charge=  2.5545    0.0001
-     atom  18 (R=0.111)  charge=  9.4532   -0.0001
-     atom  19 (R=0.111)  charge=  8.9960    0.0015
-     atom  20 (R=0.111)  charge=  8.9928    0.0001
-     atom  21 (R=0.111)  charge=  9.0000    0.0018
-     atom  22 (R=0.111)  charge=  8.9947    0.0003
-     atom  23 (R=0.052)  charge=  0.8200    0.0000
+     atom   1 (R=0.074)  charge=  5.9334  magn=  0.0000
+     atom   2 (R=0.074)  charge=  5.8652  magn=  0.0000
+     atom   3 (R=0.074)  charge=  5.8648  magn=  0.0000
+     atom   4 (R=0.074)  charge=  5.8666  magn=  0.0000
+     atom   5 (R=0.074)  charge=  5.8655  magn=  0.0000
+     atom   6 (R=0.110)  charge= 10.3491  magn=  0.0000
+     atom   7 (R=0.110)  charge= 10.3453  magn=  0.0001
+     atom   8 (R=0.052)  charge=  2.5628  magn= -0.0000
+     atom   9 (R=0.052)  charge=  2.5822  magn=  0.0000
+     atom  10 (R=0.052)  charge=  2.5551  magn=  0.0001
+     atom  11 (R=0.052)  charge=  2.5542  magn=  0.0001
+     atom  12 (R=0.052)  charge=  2.5542  magn=  0.0002
+     atom  13 (R=0.052)  charge=  2.5541  magn=  0.0001
+     atom  14 (R=0.052)  charge=  2.5561  magn=  0.0001
+     atom  15 (R=0.052)  charge=  2.5560  magn=  0.0001
+     atom  16 (R=0.052)  charge=  2.5580  magn=  0.0002
+     atom  17 (R=0.052)  charge=  2.5545  magn=  0.0001
+     atom  18 (R=0.111)  charge=  9.4532  magn= -0.0001
+     atom  19 (R=0.111)  charge=  8.9960  magn=  0.0015
+     atom  20 (R=0.111)  charge=  8.9928  magn=  0.0001
+     atom  21 (R=0.111)  charge=  9.0000  magn=  0.0018
+     atom  22 (R=0.111)  charge=  8.9947  magn=  0.0003
+     atom  23 (R=0.052)  charge=  0.8200  magn=  0.0000
 
      total cpu time spent up to now is     1045.3 secs
 
@@ -2392,29 +2392,29 @@ H             4.6191153699        5.1767069204        5.0719517173
      negative rho (up, down):  9.076E-01 9.076E-01
 
      Magnetic moment per site  (integrated on atomic sphere of radius R)
-     atom   1 (R=0.074)  charge=  5.9326    0.0000
-     atom   2 (R=0.074)  charge=  5.8652    0.0000
-     atom   3 (R=0.074)  charge=  5.8648    0.0000
-     atom   4 (R=0.074)  charge=  5.8664    0.0000
-     atom   5 (R=0.074)  charge=  5.8642    0.0000
-     atom   6 (R=0.110)  charge= 10.3437    0.0000
-     atom   7 (R=0.110)  charge= 10.3449    0.0001
-     atom   8 (R=0.043)  charge=  1.1476   -0.0000
-     atom   9 (R=0.043)  charge=  1.1629    0.0000
-     atom  10 (R=0.043)  charge=  1.1433    0.0000
-     atom  11 (R=0.043)  charge=  1.1437    0.0000
-     atom  12 (R=0.043)  charge=  1.1436    0.0001
-     atom  13 (R=0.043)  charge=  1.1438    0.0000
-     atom  14 (R=0.043)  charge=  1.1426    0.0000
-     atom  15 (R=0.043)  charge=  1.1420    0.0000
-     atom  16 (R=0.043)  charge=  1.1406    0.0001
-     atom  17 (R=0.043)  charge=  1.1432    0.0000
-     atom  18 (R=0.111)  charge=  9.4506   -0.0001
-     atom  19 (R=0.111)  charge=  8.9951    0.0011
-     atom  20 (R=0.111)  charge=  8.9959    0.0002
-     atom  21 (R=0.111)  charge=  8.9965    0.0013
-     atom  22 (R=0.111)  charge=  8.9948    0.0003
-     atom  23 (R=0.043)  charge=  0.7542    0.0000
+     atom   1 (R=0.074)  charge=  5.9326  magn=  0.0000
+     atom   2 (R=0.074)  charge=  5.8652  magn=  0.0000
+     atom   3 (R=0.074)  charge=  5.8648  magn=  0.0000
+     atom   4 (R=0.074)  charge=  5.8664  magn=  0.0000
+     atom   5 (R=0.074)  charge=  5.8642  magn=  0.0000
+     atom   6 (R=0.110)  charge= 10.3437  magn=  0.0000
+     atom   7 (R=0.110)  charge= 10.3449  magn=  0.0001
+     atom   8 (R=0.043)  charge=  1.1476  magn= -0.0000
+     atom   9 (R=0.043)  charge=  1.1629  magn=  0.0000
+     atom  10 (R=0.043)  charge=  1.1433  magn=  0.0000
+     atom  11 (R=0.043)  charge=  1.1437  magn=  0.0000
+     atom  12 (R=0.043)  charge=  1.1436  magn=  0.0001
+     atom  13 (R=0.043)  charge=  1.1438  magn=  0.0000
+     atom  14 (R=0.043)  charge=  1.1426  magn=  0.0000
+     atom  15 (R=0.043)  charge=  1.1420  magn=  0.0000
+     atom  16 (R=0.043)  charge=  1.1406  magn=  0.0001
+     atom  17 (R=0.043)  charge=  1.1432  magn=  0.0000
+     atom  18 (R=0.111)  charge=  9.4506  magn= -0.0001
+     atom  19 (R=0.111)  charge=  8.9951  magn=  0.0011
+     atom  20 (R=0.111)  charge=  8.9959  magn=  0.0002
+     atom  21 (R=0.111)  charge=  8.9965  magn=  0.0013
+     atom  22 (R=0.111)  charge=  8.9948  magn=  0.0003
+     atom  23 (R=0.043)  charge=  0.7542  magn=  0.0000
 
      total cpu time spent up to now is     1226.1 secs
 
@@ -2790,29 +2790,29 @@ H             4.5270818585        5.0140517948        5.0718306748
      negative rho (up, down):  9.081E-01 9.081E-01
 
      Magnetic moment per site  (integrated on atomic sphere of radius R)
-     atom   1 (R=0.074)  charge=  5.9325    0.0000
-     atom   2 (R=0.074)  charge=  5.8653    0.0000
-     atom   3 (R=0.074)  charge=  5.8649    0.0000
-     atom   4 (R=0.074)  charge=  5.8652    0.0000
-     atom   5 (R=0.074)  charge=  5.8638    0.0000
-     atom   6 (R=0.110)  charge= 10.3375    0.0000
-     atom   7 (R=0.110)  charge= 10.3418    0.0001
-     atom   8 (R=0.034)  charge=  0.2915   -0.0000
-     atom   9 (R=0.034)  charge=  0.3001    0.0000
-     atom  10 (R=0.034)  charge=  0.2905    0.0000
-     atom  11 (R=0.034)  charge=  0.2899    0.0000
-     atom  12 (R=0.034)  charge=  0.2906    0.0000
-     atom  13 (R=0.034)  charge=  0.2902    0.0000
-     atom  14 (R=0.034)  charge=  0.2904    0.0000
-     atom  15 (R=0.034)  charge=  0.2897    0.0000
-     atom  16 (R=0.034)  charge=  0.2889    0.0000
-     atom  17 (R=0.034)  charge=  0.2906    0.0000
-     atom  18 (R=0.111)  charge=  9.4477   -0.0000
-     atom  19 (R=0.111)  charge=  8.9992    0.0008
-     atom  20 (R=0.111)  charge=  8.9950    0.0001
-     atom  21 (R=0.111)  charge=  8.9976    0.0010
-     atom  22 (R=0.111)  charge=  8.9901    0.0003
-     atom  23 (R=0.034)  charge=  0.6666    0.0000
+     atom   1 (R=0.074)  charge=  5.9325  magn=  0.0000
+     atom   2 (R=0.074)  charge=  5.8653  magn=  0.0000
+     atom   3 (R=0.074)  charge=  5.8649  magn=  0.0000
+     atom   4 (R=0.074)  charge=  5.8652  magn=  0.0000
+     atom   5 (R=0.074)  charge=  5.8638  magn=  0.0000
+     atom   6 (R=0.110)  charge= 10.3375  magn=  0.0000
+     atom   7 (R=0.110)  charge= 10.3418  magn=  0.0001
+     atom   8 (R=0.034)  charge=  0.2915  magn= -0.0000
+     atom   9 (R=0.034)  charge=  0.3001  magn=  0.0000
+     atom  10 (R=0.034)  charge=  0.2905  magn=  0.0000
+     atom  11 (R=0.034)  charge=  0.2899  magn=  0.0000
+     atom  12 (R=0.034)  charge=  0.2906  magn=  0.0000
+     atom  13 (R=0.034)  charge=  0.2902  magn=  0.0000
+     atom  14 (R=0.034)  charge=  0.2904  magn=  0.0000
+     atom  15 (R=0.034)  charge=  0.2897  magn=  0.0000
+     atom  16 (R=0.034)  charge=  0.2889  magn=  0.0000
+     atom  17 (R=0.034)  charge=  0.2906  magn=  0.0000
+     atom  18 (R=0.111)  charge=  9.4477  magn= -0.0000
+     atom  19 (R=0.111)  charge=  8.9992  magn=  0.0008
+     atom  20 (R=0.111)  charge=  8.9950  magn=  0.0001
+     atom  21 (R=0.111)  charge=  8.9976  magn=  0.0010
+     atom  22 (R=0.111)  charge=  8.9901  magn=  0.0003
+     atom  23 (R=0.034)  charge=  0.6666  magn=  0.0000
 
      total cpu time spent up to now is     1408.3 secs
 
@@ -3190,29 +3190,29 @@ H             4.4516641212        4.8793475711        5.0716944659
      negative rho (up, down):  9.079E-01 9.079E-01
 
      Magnetic moment per site  (integrated on atomic sphere of radius R)
-     atom   1 (R=0.074)  charge=  5.9318   -0.0000
-     atom   2 (R=0.074)  charge=  5.8655    0.0000
-     atom   3 (R=0.074)  charge=  5.8649    0.0000
-     atom   4 (R=0.074)  charge=  5.8641    0.0000
-     atom   5 (R=0.074)  charge=  5.8641    0.0000
-     atom   6 (R=0.110)  charge= 10.3336    0.0000
-     atom   7 (R=0.110)  charge= 10.3395    0.0000
-     atom   8 (R=0.028)  charge= -0.0284    0.0000
-     atom   9 (R=0.028)  charge= -0.0207    0.0000
-     atom  10 (R=0.028)  charge= -0.0257    0.0000
-     atom  11 (R=0.028)  charge= -0.0269    0.0000
-     atom  12 (R=0.028)  charge= -0.0274    0.0000
-     atom  13 (R=0.028)  charge= -0.0253    0.0000
-     atom  14 (R=0.028)  charge= -0.0284    0.0000
-     atom  15 (R=0.028)  charge= -0.0283    0.0000
-     atom  16 (R=0.028)  charge= -0.0291    0.0000
-     atom  17 (R=0.028)  charge= -0.0283    0.0000
-     atom  18 (R=0.111)  charge=  9.4481   -0.0000
-     atom  19 (R=0.111)  charge=  8.9965    0.0006
-     atom  20 (R=0.111)  charge=  8.9981    0.0001
-     atom  21 (R=0.111)  charge=  8.9912    0.0007
-     atom  22 (R=0.111)  charge=  8.9901    0.0002
-     atom  23 (R=0.028)  charge=  0.5445   -0.0000
+     atom   1 (R=0.074)  charge=  5.9318  magn= -0.0000
+     atom   2 (R=0.074)  charge=  5.8655  magn=  0.0000
+     atom   3 (R=0.074)  charge=  5.8649  magn=  0.0000
+     atom   4 (R=0.074)  charge=  5.8641  magn=  0.0000
+     atom   5 (R=0.074)  charge=  5.8641  magn=  0.0000
+     atom   6 (R=0.110)  charge= 10.3336  magn=  0.0000
+     atom   7 (R=0.110)  charge= 10.3395  magn=  0.0000
+     atom   8 (R=0.028)  charge= -0.0284  magn=  0.0000
+     atom   9 (R=0.028)  charge= -0.0207  magn=  0.0000
+     atom  10 (R=0.028)  charge= -0.0257  magn=  0.0000
+     atom  11 (R=0.028)  charge= -0.0269  magn=  0.0000
+     atom  12 (R=0.028)  charge= -0.0274  magn=  0.0000
+     atom  13 (R=0.028)  charge= -0.0253  magn=  0.0000
+     atom  14 (R=0.028)  charge= -0.0284  magn=  0.0000
+     atom  15 (R=0.028)  charge= -0.0283  magn=  0.0000
+     atom  16 (R=0.028)  charge= -0.0291  magn=  0.0000
+     atom  17 (R=0.028)  charge= -0.0283  magn=  0.0000
+     atom  18 (R=0.111)  charge=  9.4481  magn= -0.0000
+     atom  19 (R=0.111)  charge=  8.9965  magn=  0.0006
+     atom  20 (R=0.111)  charge=  8.9981  magn=  0.0001
+     atom  21 (R=0.111)  charge=  8.9912  magn=  0.0007
+     atom  22 (R=0.111)  charge=  8.9901  magn=  0.0002
+     atom  23 (R=0.028)  charge=  0.5445  magn= -0.0000
 
      total cpu time spent up to now is     1582.9 secs
 
@@ -3590,29 +3590,29 @@ H             4.4118897295        4.8042971805        5.0715746599
      negative rho (up, down):  9.067E-01 9.067E-01
 
      Magnetic moment per site  (integrated on atomic sphere of radius R)
-     atom   1 (R=0.074)  charge=  5.9328   -0.0000
-     atom   2 (R=0.074)  charge=  5.8656    0.0000
-     atom   3 (R=0.074)  charge=  5.8649    0.0000
-     atom   4 (R=0.074)  charge=  5.8638    0.0000
-     atom   5 (R=0.074)  charge=  5.8641    0.0000
-     atom   6 (R=0.110)  charge= 10.3306    0.0000
-     atom   7 (R=0.110)  charge= 10.3397    0.0000
-     atom   8 (R=0.024)  charge= -0.0860    0.0000
-     atom   9 (R=0.024)  charge= -0.0784    0.0000
-     atom  10 (R=0.024)  charge= -0.0868   -0.0000
-     atom  11 (R=0.024)  charge= -0.0862    0.0000
-     atom  12 (R=0.024)  charge= -0.0853    0.0000
-     atom  13 (R=0.024)  charge= -0.0871   -0.0000
-     atom  14 (R=0.024)  charge= -0.0853   -0.0000
-     atom  15 (R=0.024)  charge= -0.0851    0.0000
-     atom  16 (R=0.024)  charge= -0.0853    0.0000
-     atom  17 (R=0.024)  charge= -0.0853   -0.0000
-     atom  18 (R=0.111)  charge=  9.4444   -0.0000
-     atom  19 (R=0.111)  charge=  8.9993    0.0004
-     atom  20 (R=0.111)  charge=  8.9958    0.0001
-     atom  21 (R=0.111)  charge=  8.9926    0.0005
-     atom  22 (R=0.111)  charge=  8.9868    0.0001
-     atom  23 (R=0.024)  charge=  0.4361   -0.0000
+     atom   1 (R=0.074)  charge=  5.9328  magn= -0.0000
+     atom   2 (R=0.074)  charge=  5.8656  magn=  0.0000
+     atom   3 (R=0.074)  charge=  5.8649  magn=  0.0000
+     atom   4 (R=0.074)  charge=  5.8638  magn=  0.0000
+     atom   5 (R=0.074)  charge=  5.8641  magn=  0.0000
+     atom   6 (R=0.110)  charge= 10.3306  magn=  0.0000
+     atom   7 (R=0.110)  charge= 10.3397  magn=  0.0000
+     atom   8 (R=0.024)  charge= -0.0860  magn=  0.0000
+     atom   9 (R=0.024)  charge= -0.0784  magn=  0.0000
+     atom  10 (R=0.024)  charge= -0.0868  magn= -0.0000
+     atom  11 (R=0.024)  charge= -0.0862  magn=  0.0000
+     atom  12 (R=0.024)  charge= -0.0853  magn=  0.0000
+     atom  13 (R=0.024)  charge= -0.0871  magn= -0.0000
+     atom  14 (R=0.024)  charge= -0.0853  magn= -0.0000
+     atom  15 (R=0.024)  charge= -0.0851  magn=  0.0000
+     atom  16 (R=0.024)  charge= -0.0853  magn=  0.0000
+     atom  17 (R=0.024)  charge= -0.0853  magn= -0.0000
+     atom  18 (R=0.111)  charge=  9.4444  magn= -0.0000
+     atom  19 (R=0.111)  charge=  8.9993  magn=  0.0004
+     atom  20 (R=0.111)  charge=  8.9958  magn=  0.0001
+     atom  21 (R=0.111)  charge=  8.9926  magn=  0.0005
+     atom  22 (R=0.111)  charge=  8.9868  magn=  0.0001
+     atom  23 (R=0.024)  charge=  0.4361  magn= -0.0000
 
      total cpu time spent up to now is     1766.2 secs
 
@@ -3986,29 +3986,29 @@ H             4.4263841645        4.8186349705        5.0715233154
      negative rho (up, down):  9.072E-01 9.072E-01
 
      Magnetic moment per site  (integrated on atomic sphere of radius R)
-     atom   1 (R=0.074)  charge=  5.9320   -0.0000
-     atom   2 (R=0.074)  charge=  5.8655    0.0000
-     atom   3 (R=0.074)  charge=  5.8650    0.0000
-     atom   4 (R=0.074)  charge=  5.8640    0.0000
-     atom   5 (R=0.074)  charge=  5.8641    0.0000
-     atom   6 (R=0.110)  charge= 10.3331    0.0000
-     atom   7 (R=0.110)  charge= 10.3382    0.0000
-     atom   8 (R=0.024)  charge= -0.0860    0.0000
-     atom   9 (R=0.024)  charge= -0.0797    0.0000
-     atom  10 (R=0.024)  charge= -0.0868   -0.0000
-     atom  11 (R=0.024)  charge= -0.0862    0.0000
-     atom  12 (R=0.024)  charge= -0.0853    0.0000
-     atom  13 (R=0.024)  charge= -0.0871   -0.0000
-     atom  14 (R=0.024)  charge= -0.0853   -0.0000
-     atom  15 (R=0.024)  charge= -0.0851    0.0000
-     atom  16 (R=0.024)  charge= -0.0853    0.0000
-     atom  17 (R=0.024)  charge= -0.0853   -0.0000
-     atom  18 (R=0.111)  charge=  9.4469   -0.0000
-     atom  19 (R=0.111)  charge=  8.9964    0.0003
-     atom  20 (R=0.111)  charge=  8.9977    0.0001
-     atom  21 (R=0.111)  charge=  8.9901    0.0004
-     atom  22 (R=0.111)  charge=  8.9891    0.0001
-     atom  23 (R=0.024)  charge=  0.4232   -0.0000
+     atom   1 (R=0.074)  charge=  5.9320  magn= -0.0000
+     atom   2 (R=0.074)  charge=  5.8655  magn=  0.0000
+     atom   3 (R=0.074)  charge=  5.8650  magn=  0.0000
+     atom   4 (R=0.074)  charge=  5.8640  magn=  0.0000
+     atom   5 (R=0.074)  charge=  5.8641  magn=  0.0000
+     atom   6 (R=0.110)  charge= 10.3331  magn=  0.0000
+     atom   7 (R=0.110)  charge= 10.3382  magn=  0.0000
+     atom   8 (R=0.024)  charge= -0.0860  magn=  0.0000
+     atom   9 (R=0.024)  charge= -0.0797  magn=  0.0000
+     atom  10 (R=0.024)  charge= -0.0868  magn= -0.0000
+     atom  11 (R=0.024)  charge= -0.0862  magn=  0.0000
+     atom  12 (R=0.024)  charge= -0.0853  magn=  0.0000
+     atom  13 (R=0.024)  charge= -0.0871  magn= -0.0000
+     atom  14 (R=0.024)  charge= -0.0853  magn= -0.0000
+     atom  15 (R=0.024)  charge= -0.0851  magn=  0.0000
+     atom  16 (R=0.024)  charge= -0.0853  magn=  0.0000
+     atom  17 (R=0.024)  charge= -0.0853  magn= -0.0000
+     atom  18 (R=0.111)  charge=  9.4469  magn= -0.0000
+     atom  19 (R=0.111)  charge=  8.9964  magn=  0.0003
+     atom  20 (R=0.111)  charge=  8.9977  magn=  0.0001
+     atom  21 (R=0.111)  charge=  8.9901  magn=  0.0004
+     atom  22 (R=0.111)  charge=  8.9891  magn=  0.0001
+     atom  23 (R=0.024)  charge=  0.4232  magn= -0.0000
 
      total cpu time spent up to now is     1929.7 secs
 
@@ -4368,29 +4368,29 @@ H             4.4902684433        4.9127374940        5.0715021536
      negative rho (up, down):  9.083E-01 9.083E-01
 
      Magnetic moment per site  (integrated on atomic sphere of radius R)
-     atom   1 (R=0.074)  charge=  5.9329   -0.0000
-     atom   2 (R=0.074)  charge=  5.8654    0.0000
-     atom   3 (R=0.074)  charge=  5.8647    0.0000
-     atom   4 (R=0.074)  charge=  5.8650    0.0000
-     atom   5 (R=0.074)  charge=  5.8641    0.0000
-     atom   6 (R=0.110)  charge= 10.3357    0.0000
-     atom   7 (R=0.110)  charge= 10.3413    0.0000
-     atom   8 (R=0.024)  charge= -0.0860    0.0000
-     atom   9 (R=0.024)  charge= -0.0835    0.0000
-     atom  10 (R=0.024)  charge= -0.0868   -0.0000
-     atom  11 (R=0.024)  charge= -0.0862    0.0000
-     atom  12 (R=0.024)  charge= -0.0853    0.0000
-     atom  13 (R=0.024)  charge= -0.0871   -0.0000
-     atom  14 (R=0.024)  charge= -0.0853   -0.0000
-     atom  15 (R=0.024)  charge= -0.0851    0.0000
-     atom  16 (R=0.024)  charge= -0.0853    0.0000
-     atom  17 (R=0.024)  charge= -0.0853   -0.0000
-     atom  18 (R=0.111)  charge=  9.4451   -0.0000
-     atom  19 (R=0.111)  charge=  9.0006    0.0002
-     atom  20 (R=0.111)  charge=  8.9928    0.0000
-     atom  21 (R=0.111)  charge=  8.9986    0.0003
-     atom  22 (R=0.111)  charge=  8.9867    0.0001
-     atom  23 (R=0.024)  charge=  0.3454   -0.0000
+     atom   1 (R=0.074)  charge=  5.9329  magn= -0.0000
+     atom   2 (R=0.074)  charge=  5.8654  magn=  0.0000
+     atom   3 (R=0.074)  charge=  5.8647  magn=  0.0000
+     atom   4 (R=0.074)  charge=  5.8650  magn=  0.0000
+     atom   5 (R=0.074)  charge=  5.8641  magn=  0.0000
+     atom   6 (R=0.110)  charge= 10.3357  magn=  0.0000
+     atom   7 (R=0.110)  charge= 10.3413  magn=  0.0000
+     atom   8 (R=0.024)  charge= -0.0860  magn=  0.0000
+     atom   9 (R=0.024)  charge= -0.0835  magn=  0.0000
+     atom  10 (R=0.024)  charge= -0.0868  magn= -0.0000
+     atom  11 (R=0.024)  charge= -0.0862  magn=  0.0000
+     atom  12 (R=0.024)  charge= -0.0853  magn=  0.0000
+     atom  13 (R=0.024)  charge= -0.0871  magn= -0.0000
+     atom  14 (R=0.024)  charge= -0.0853  magn= -0.0000
+     atom  15 (R=0.024)  charge= -0.0851  magn=  0.0000
+     atom  16 (R=0.024)  charge= -0.0853  magn=  0.0000
+     atom  17 (R=0.024)  charge= -0.0853  magn= -0.0000
+     atom  18 (R=0.111)  charge=  9.4451  magn= -0.0000
+     atom  19 (R=0.111)  charge=  9.0006  magn=  0.0002
+     atom  20 (R=0.111)  charge=  8.9928  magn=  0.0000
+     atom  21 (R=0.111)  charge=  8.9986  magn=  0.0003
+     atom  22 (R=0.111)  charge=  8.9867  magn=  0.0001
+     atom  23 (R=0.024)  charge=  0.3454  magn= -0.0000
 
      total cpu time spent up to now is     2084.4 secs
 
@@ -4766,29 +4766,29 @@ H             4.5823538797        5.0515664754        5.0714739915
      negative rho (up, down):  9.080E-01 9.080E-01
 
      Magnetic moment per site  (integrated on atomic sphere of radius R)
-     atom   1 (R=0.074)  charge=  5.9322    0.0000
-     atom   2 (R=0.074)  charge=  5.8653    0.0000
-     atom   3 (R=0.074)  charge=  5.8647    0.0000
-     atom   4 (R=0.074)  charge=  5.8663    0.0000
-     atom   5 (R=0.074)  charge=  5.8645    0.0000
-     atom   6 (R=0.110)  charge= 10.3447    0.0000
-     atom   7 (R=0.110)  charge= 10.3413    0.0000
-     atom   8 (R=0.024)  charge= -0.0859    0.0000
-     atom   9 (R=0.024)  charge= -0.0836    0.0000
-     atom  10 (R=0.024)  charge= -0.0868   -0.0000
-     atom  11 (R=0.024)  charge= -0.0862    0.0000
-     atom  12 (R=0.024)  charge= -0.0852    0.0000
-     atom  13 (R=0.024)  charge= -0.0870   -0.0000
-     atom  14 (R=0.024)  charge= -0.0853   -0.0000
-     atom  15 (R=0.024)  charge= -0.0851   -0.0000
-     atom  16 (R=0.024)  charge= -0.0852    0.0000
-     atom  17 (R=0.024)  charge= -0.0853   -0.0000
-     atom  18 (R=0.111)  charge=  9.4499   -0.0000
-     atom  19 (R=0.111)  charge=  8.9936    0.0002
-     atom  20 (R=0.111)  charge=  8.9957    0.0000
-     atom  21 (R=0.111)  charge=  8.9946    0.0002
-     atom  22 (R=0.111)  charge=  8.9953    0.0001
-     atom  23 (R=0.024)  charge=  0.2371    0.0000
+     atom   1 (R=0.074)  charge=  5.9322  magn=  0.0000
+     atom   2 (R=0.074)  charge=  5.8653  magn=  0.0000
+     atom   3 (R=0.074)  charge=  5.8647  magn=  0.0000
+     atom   4 (R=0.074)  charge=  5.8663  magn=  0.0000
+     atom   5 (R=0.074)  charge=  5.8645  magn=  0.0000
+     atom   6 (R=0.110)  charge= 10.3447  magn=  0.0000
+     atom   7 (R=0.110)  charge= 10.3413  magn=  0.0000
+     atom   8 (R=0.024)  charge= -0.0859  magn=  0.0000
+     atom   9 (R=0.024)  charge= -0.0836  magn=  0.0000
+     atom  10 (R=0.024)  charge= -0.0868  magn= -0.0000
+     atom  11 (R=0.024)  charge= -0.0862  magn=  0.0000
+     atom  12 (R=0.024)  charge= -0.0852  magn=  0.0000
+     atom  13 (R=0.024)  charge= -0.0870  magn= -0.0000
+     atom  14 (R=0.024)  charge= -0.0853  magn= -0.0000
+     atom  15 (R=0.024)  charge= -0.0851  magn= -0.0000
+     atom  16 (R=0.024)  charge= -0.0852  magn=  0.0000
+     atom  17 (R=0.024)  charge= -0.0853  magn= -0.0000
+     atom  18 (R=0.111)  charge=  9.4499  magn= -0.0000
+     atom  19 (R=0.111)  charge=  8.9936  magn=  0.0002
+     atom  20 (R=0.111)  charge=  8.9957  magn=  0.0000
+     atom  21 (R=0.111)  charge=  8.9946  magn=  0.0002
+     atom  22 (R=0.111)  charge=  8.9953  magn=  0.0001
+     atom  23 (R=0.024)  charge=  0.2371  magn=  0.0000
 
      total cpu time spent up to now is     2264.5 secs
 
@@ -5164,29 +5164,29 @@ H             4.6867578402        5.2095569885        5.0713932224
      negative rho (up, down):  9.080E-01 9.080E-01
 
      Magnetic moment per site  (integrated on atomic sphere of radius R)
-     atom   1 (R=0.074)  charge=  5.9333    0.0000
-     atom   2 (R=0.074)  charge=  5.8652    0.0000
-     atom   3 (R=0.074)  charge=  5.8647    0.0000
-     atom   4 (R=0.074)  charge=  5.8669    0.0000
-     atom   5 (R=0.074)  charge=  5.8648    0.0000
-     atom   6 (R=0.110)  charge= 10.3499    0.0000
-     atom   7 (R=0.110)  charge= 10.3432   -0.0000
-     atom   8 (R=0.024)  charge= -0.0858   -0.0000
-     atom   9 (R=0.024)  charge= -0.0838    0.0000
-     atom  10 (R=0.024)  charge= -0.0868   -0.0000
-     atom  11 (R=0.024)  charge= -0.0862   -0.0000
-     atom  12 (R=0.024)  charge= -0.0852   -0.0000
-     atom  13 (R=0.024)  charge= -0.0870    0.0000
-     atom  14 (R=0.024)  charge= -0.0853   -0.0000
-     atom  15 (R=0.024)  charge= -0.0851    0.0000
-     atom  16 (R=0.024)  charge= -0.0852    0.0000
-     atom  17 (R=0.024)  charge= -0.0852   -0.0000
-     atom  18 (R=0.111)  charge=  9.4503   -0.0000
-     atom  19 (R=0.111)  charge=  8.9948    0.0001
-     atom  20 (R=0.111)  charge=  8.9926    0.0000
-     atom  21 (R=0.111)  charge=  8.9989    0.0001
-     atom  22 (R=0.111)  charge=  8.9942    0.0001
-     atom  23 (R=0.024)  charge=  0.1718    0.0000
+     atom   1 (R=0.074)  charge=  5.9333  magn=  0.0000
+     atom   2 (R=0.074)  charge=  5.8652  magn=  0.0000
+     atom   3 (R=0.074)  charge=  5.8647  magn=  0.0000
+     atom   4 (R=0.074)  charge=  5.8669  magn=  0.0000
+     atom   5 (R=0.074)  charge=  5.8648  magn=  0.0000
+     atom   6 (R=0.110)  charge= 10.3499  magn=  0.0000
+     atom   7 (R=0.110)  charge= 10.3432  magn= -0.0000
+     atom   8 (R=0.024)  charge= -0.0858  magn= -0.0000
+     atom   9 (R=0.024)  charge= -0.0838  magn=  0.0000
+     atom  10 (R=0.024)  charge= -0.0868  magn= -0.0000
+     atom  11 (R=0.024)  charge= -0.0862  magn= -0.0000
+     atom  12 (R=0.024)  charge= -0.0852  magn= -0.0000
+     atom  13 (R=0.024)  charge= -0.0870  magn=  0.0000
+     atom  14 (R=0.024)  charge= -0.0853  magn= -0.0000
+     atom  15 (R=0.024)  charge= -0.0851  magn=  0.0000
+     atom  16 (R=0.024)  charge= -0.0852  magn=  0.0000
+     atom  17 (R=0.024)  charge= -0.0852  magn= -0.0000
+     atom  18 (R=0.111)  charge=  9.4503  magn= -0.0000
+     atom  19 (R=0.111)  charge=  8.9948  magn=  0.0001
+     atom  20 (R=0.111)  charge=  8.9926  magn=  0.0000
+     atom  21 (R=0.111)  charge=  8.9989  magn=  0.0001
+     atom  22 (R=0.111)  charge=  8.9942  magn=  0.0001
+     atom  23 (R=0.024)  charge=  0.1718  magn=  0.0000
 
      total cpu time spent up to now is     2449.4 secs
 
@@ -5564,29 +5564,29 @@ H             4.7962581400        5.3752598326        5.0712848091
      negative rho (up, down):  9.085E-01 9.085E-01
 
      Magnetic moment per site  (integrated on atomic sphere of radius R)
-     atom   1 (R=0.074)  charge=  5.9338    0.0000
-     atom   2 (R=0.074)  charge=  5.8651    0.0000
-     atom   3 (R=0.074)  charge=  5.8647    0.0000
-     atom   4 (R=0.074)  charge=  5.8668    0.0000
-     atom   5 (R=0.074)  charge=  5.8657    0.0000
-     atom   6 (R=0.110)  charge= 10.3517   -0.0000
-     atom   7 (R=0.110)  charge= 10.3452    0.0000
-     atom   8 (R=0.024)  charge= -0.0858   -0.0000
-     atom   9 (R=0.024)  charge= -0.0855    0.0000
-     atom  10 (R=0.024)  charge= -0.0868   -0.0000
-     atom  11 (R=0.024)  charge= -0.0862   -0.0000
-     atom  12 (R=0.024)  charge= -0.0852    0.0000
-     atom  13 (R=0.024)  charge= -0.0870   -0.0000
-     atom  14 (R=0.024)  charge= -0.0853    0.0000
-     atom  15 (R=0.024)  charge= -0.0851    0.0000
-     atom  16 (R=0.024)  charge= -0.0852    0.0000
-     atom  17 (R=0.024)  charge= -0.0852    0.0000
-     atom  18 (R=0.111)  charge=  9.4512   -0.0000
-     atom  19 (R=0.111)  charge=  8.9930    0.0001
-     atom  20 (R=0.111)  charge=  8.9927    0.0000
-     atom  21 (R=0.111)  charge=  8.9982    0.0001
-     atom  22 (R=0.111)  charge=  8.9958    0.0001
-     atom  23 (R=0.024)  charge=  0.1342    0.0000
+     atom   1 (R=0.074)  charge=  5.9338  magn=  0.0000
+     atom   2 (R=0.074)  charge=  5.8651  magn=  0.0000
+     atom   3 (R=0.074)  charge=  5.8647  magn=  0.0000
+     atom   4 (R=0.074)  charge=  5.8668  magn=  0.0000
+     atom   5 (R=0.074)  charge=  5.8657  magn=  0.0000
+     atom   6 (R=0.110)  charge= 10.3517  magn= -0.0000
+     atom   7 (R=0.110)  charge= 10.3452  magn=  0.0000
+     atom   8 (R=0.024)  charge= -0.0858  magn= -0.0000
+     atom   9 (R=0.024)  charge= -0.0855  magn=  0.0000
+     atom  10 (R=0.024)  charge= -0.0868  magn= -0.0000
+     atom  11 (R=0.024)  charge= -0.0862  magn= -0.0000
+     atom  12 (R=0.024)  charge= -0.0852  magn=  0.0000
+     atom  13 (R=0.024)  charge= -0.0870  magn= -0.0000
+     atom  14 (R=0.024)  charge= -0.0853  magn=  0.0000
+     atom  15 (R=0.024)  charge= -0.0851  magn=  0.0000
+     atom  16 (R=0.024)  charge= -0.0852  magn=  0.0000
+     atom  17 (R=0.024)  charge= -0.0852  magn=  0.0000
+     atom  18 (R=0.111)  charge=  9.4512  magn= -0.0000
+     atom  19 (R=0.111)  charge=  8.9930  magn=  0.0001
+     atom  20 (R=0.111)  charge=  8.9927  magn=  0.0000
+     atom  21 (R=0.111)  charge=  8.9982  magn=  0.0001
+     atom  22 (R=0.111)  charge=  8.9958  magn=  0.0001
+     atom  23 (R=0.024)  charge=  0.1342  magn=  0.0000
 
      total cpu time spent up to now is     2627.9 secs
 
@@ -5960,29 +5960,29 @@ H             4.9079997880        5.5442073326        5.0711468141
      negative rho (up, down):  9.090E-01 9.090E-01
 
      Magnetic moment per site  (integrated on atomic sphere of radius R)
-     atom   1 (R=0.074)  charge=  5.9342    0.0000
-     atom   2 (R=0.074)  charge=  5.8651   -0.0000
-     atom   3 (R=0.074)  charge=  5.8648    0.0000
-     atom   4 (R=0.074)  charge=  5.8666    0.0000
-     atom   5 (R=0.074)  charge=  5.8675    0.0000
-     atom   6 (R=0.110)  charge= 10.3539    0.0000
-     atom   7 (R=0.110)  charge= 10.3447    0.0000
-     atom   8 (R=0.024)  charge= -0.0858    0.0000
-     atom   9 (R=0.024)  charge= -0.0867   -0.0000
-     atom  10 (R=0.024)  charge= -0.0868   -0.0000
-     atom  11 (R=0.024)  charge= -0.0862    0.0000
-     atom  12 (R=0.024)  charge= -0.0852   -0.0000
-     atom  13 (R=0.024)  charge= -0.0870    0.0000
-     atom  14 (R=0.024)  charge= -0.0853   -0.0000
-     atom  15 (R=0.024)  charge= -0.0851   -0.0000
-     atom  16 (R=0.024)  charge= -0.0852    0.0000
-     atom  17 (R=0.024)  charge= -0.0852    0.0000
-     atom  18 (R=0.111)  charge=  9.4519   -0.0000
-     atom  19 (R=0.111)  charge=  8.9937    0.0001
-     atom  20 (R=0.111)  charge=  8.9911    0.0000
-     atom  21 (R=0.111)  charge=  8.9995    0.0001
-     atom  22 (R=0.111)  charge=  8.9947    0.0001
-     atom  23 (R=0.024)  charge=  0.1139    0.0000
+     atom   1 (R=0.074)  charge=  5.9342  magn=  0.0000
+     atom   2 (R=0.074)  charge=  5.8651  magn= -0.0000
+     atom   3 (R=0.074)  charge=  5.8648  magn=  0.0000
+     atom   4 (R=0.074)  charge=  5.8666  magn=  0.0000
+     atom   5 (R=0.074)  charge=  5.8675  magn=  0.0000
+     atom   6 (R=0.110)  charge= 10.3539  magn=  0.0000
+     atom   7 (R=0.110)  charge= 10.3447  magn=  0.0000
+     atom   8 (R=0.024)  charge= -0.0858  magn=  0.0000
+     atom   9 (R=0.024)  charge= -0.0867  magn= -0.0000
+     atom  10 (R=0.024)  charge= -0.0868  magn= -0.0000
+     atom  11 (R=0.024)  charge= -0.0862  magn=  0.0000
+     atom  12 (R=0.024)  charge= -0.0852  magn= -0.0000
+     atom  13 (R=0.024)  charge= -0.0870  magn=  0.0000
+     atom  14 (R=0.024)  charge= -0.0853  magn= -0.0000
+     atom  15 (R=0.024)  charge= -0.0851  magn= -0.0000
+     atom  16 (R=0.024)  charge= -0.0852  magn=  0.0000
+     atom  17 (R=0.024)  charge= -0.0852  magn=  0.0000
+     atom  18 (R=0.111)  charge=  9.4519  magn= -0.0000
+     atom  19 (R=0.111)  charge=  8.9937  magn=  0.0001
+     atom  20 (R=0.111)  charge=  8.9911  magn=  0.0000
+     atom  21 (R=0.111)  charge=  8.9995  magn=  0.0001
+     atom  22 (R=0.111)  charge=  8.9947  magn=  0.0001
+     atom  23 (R=0.024)  charge=  0.1139  magn=  0.0000
 
      total cpu time spent up to now is     2817.8 secs
 
@@ -6360,29 +6360,29 @@ H             5.0207530546        5.7144523952        5.0709973339
      negative rho (up, down):  9.091E-01 9.091E-01
 
      Magnetic moment per site  (integrated on atomic sphere of radius R)
-     atom   1 (R=0.074)  charge=  5.9343    0.0000
-     atom   2 (R=0.074)  charge=  5.8652    0.0000
-     atom   3 (R=0.074)  charge=  5.8648   -0.0000
-     atom   4 (R=0.074)  charge=  5.8662   -0.0000
-     atom   5 (R=0.074)  charge=  5.8700    0.0000
-     atom   6 (R=0.110)  charge= 10.3532    0.0000
-     atom   7 (R=0.110)  charge= 10.3457    0.0000
-     atom   8 (R=0.024)  charge= -0.0858    0.0000
-     atom   9 (R=0.024)  charge= -0.0873    0.0000
-     atom  10 (R=0.024)  charge= -0.0868   -0.0000
-     atom  11 (R=0.024)  charge= -0.0863   -0.0000
-     atom  12 (R=0.024)  charge= -0.0852    0.0000
-     atom  13 (R=0.024)  charge= -0.0870   -0.0000
-     atom  14 (R=0.024)  charge= -0.0853    0.0000
-     atom  15 (R=0.024)  charge= -0.0851    0.0000
-     atom  16 (R=0.024)  charge= -0.0852    0.0000
-     atom  17 (R=0.024)  charge= -0.0852    0.0000
-     atom  18 (R=0.111)  charge=  9.4524   -0.0000
-     atom  19 (R=0.111)  charge=  8.9925    0.0000
-     atom  20 (R=0.111)  charge=  8.9920    0.0000
-     atom  21 (R=0.111)  charge=  8.9975    0.0001
-     atom  22 (R=0.111)  charge=  8.9954    0.0000
-     atom  23 (R=0.024)  charge=  0.1033    0.0000
+     atom   1 (R=0.074)  charge=  5.9343  magn=  0.0000
+     atom   2 (R=0.074)  charge=  5.8652  magn=  0.0000
+     atom   3 (R=0.074)  charge=  5.8648  magn= -0.0000
+     atom   4 (R=0.074)  charge=  5.8662  magn= -0.0000
+     atom   5 (R=0.074)  charge=  5.8700  magn=  0.0000
+     atom   6 (R=0.110)  charge= 10.3532  magn=  0.0000
+     atom   7 (R=0.110)  charge= 10.3457  magn=  0.0000
+     atom   8 (R=0.024)  charge= -0.0858  magn=  0.0000
+     atom   9 (R=0.024)  charge= -0.0873  magn=  0.0000
+     atom  10 (R=0.024)  charge= -0.0868  magn= -0.0000
+     atom  11 (R=0.024)  charge= -0.0863  magn= -0.0000
+     atom  12 (R=0.024)  charge= -0.0852  magn=  0.0000
+     atom  13 (R=0.024)  charge= -0.0870  magn= -0.0000
+     atom  14 (R=0.024)  charge= -0.0853  magn=  0.0000
+     atom  15 (R=0.024)  charge= -0.0851  magn=  0.0000
+     atom  16 (R=0.024)  charge= -0.0852  magn=  0.0000
+     atom  17 (R=0.024)  charge= -0.0852  magn=  0.0000
+     atom  18 (R=0.111)  charge=  9.4524  magn= -0.0000
+     atom  19 (R=0.111)  charge=  8.9925  magn=  0.0000
+     atom  20 (R=0.111)  charge=  8.9920  magn=  0.0000
+     atom  21 (R=0.111)  charge=  8.9975  magn=  0.0001
+     atom  22 (R=0.111)  charge=  8.9954  magn=  0.0000
+     atom  23 (R=0.024)  charge=  0.1033  magn=  0.0000
 
      total cpu time spent up to now is     2991.5 secs
 
@@ -6742,29 +6742,29 @@ H             5.1339763749        5.8850422619        5.0708277902
      negative rho (up, down):  9.091E-01 9.091E-01
 
      Magnetic moment per site  (integrated on atomic sphere of radius R)
-     atom   1 (R=0.074)  charge=  5.9345   -0.0000
-     atom   2 (R=0.074)  charge=  5.8653    0.0000
-     atom   3 (R=0.074)  charge=  5.8651    0.0000
-     atom   4 (R=0.074)  charge=  5.8660   -0.0000
-     atom   5 (R=0.074)  charge=  5.8723    0.0000
-     atom   6 (R=0.110)  charge= 10.3530    0.0000
-     atom   7 (R=0.110)  charge= 10.3468    0.0000
-     atom   8 (R=0.024)  charge= -0.0858   -0.0000
-     atom   9 (R=0.024)  charge= -0.0875    0.0000
-     atom  10 (R=0.024)  charge= -0.0868   -0.0000
-     atom  11 (R=0.024)  charge= -0.0863    0.0000
-     atom  12 (R=0.024)  charge= -0.0852    0.0000
-     atom  13 (R=0.024)  charge= -0.0870   -0.0000
-     atom  14 (R=0.024)  charge= -0.0853   -0.0000
-     atom  15 (R=0.024)  charge= -0.0851   -0.0000
-     atom  16 (R=0.024)  charge= -0.0852    0.0000
-     atom  17 (R=0.024)  charge= -0.0852   -0.0000
-     atom  18 (R=0.111)  charge=  9.4525   -0.0000
-     atom  19 (R=0.111)  charge=  8.9973    0.0001
-     atom  20 (R=0.111)  charge=  8.9909    0.0000
-     atom  21 (R=0.111)  charge=  9.0008    0.0001
-     atom  22 (R=0.111)  charge=  8.9933    0.0000
-     atom  23 (R=0.024)  charge=  0.0964    0.0000
+     atom   1 (R=0.074)  charge=  5.9345  magn= -0.0000
+     atom   2 (R=0.074)  charge=  5.8653  magn=  0.0000
+     atom   3 (R=0.074)  charge=  5.8651  magn=  0.0000
+     atom   4 (R=0.074)  charge=  5.8660  magn= -0.0000
+     atom   5 (R=0.074)  charge=  5.8723  magn=  0.0000
+     atom   6 (R=0.110)  charge= 10.3530  magn=  0.0000
+     atom   7 (R=0.110)  charge= 10.3468  magn=  0.0000
+     atom   8 (R=0.024)  charge= -0.0858  magn= -0.0000
+     atom   9 (R=0.024)  charge= -0.0875  magn=  0.0000
+     atom  10 (R=0.024)  charge= -0.0868  magn= -0.0000
+     atom  11 (R=0.024)  charge= -0.0863  magn=  0.0000
+     atom  12 (R=0.024)  charge= -0.0852  magn=  0.0000
+     atom  13 (R=0.024)  charge= -0.0870  magn= -0.0000
+     atom  14 (R=0.024)  charge= -0.0853  magn= -0.0000
+     atom  15 (R=0.024)  charge= -0.0851  magn= -0.0000
+     atom  16 (R=0.024)  charge= -0.0852  magn=  0.0000
+     atom  17 (R=0.024)  charge= -0.0852  magn= -0.0000
+     atom  18 (R=0.111)  charge=  9.4525  magn= -0.0000
+     atom  19 (R=0.111)  charge=  8.9973  magn=  0.0001
+     atom  20 (R=0.111)  charge=  8.9909  magn=  0.0000
+     atom  21 (R=0.111)  charge=  9.0008  magn=  0.0001
+     atom  22 (R=0.111)  charge=  8.9933  magn=  0.0000
+     atom  23 (R=0.024)  charge=  0.0964  magn=  0.0000
 
      total cpu time spent up to now is     3146.7 secs
 
@@ -7143,29 +7143,29 @@ H             5.2474827226        6.0555023197        5.0706528981
      negative rho (up, down):  9.090E-01 9.090E-01
 
      Magnetic moment per site  (integrated on atomic sphere of radius R)
-     atom   1 (R=0.074)  charge=  5.9346    0.0000
-     atom   2 (R=0.074)  charge=  5.8654    0.0000
-     atom   3 (R=0.074)  charge=  5.8650    0.0000
-     atom   4 (R=0.074)  charge=  5.8655   -0.0000
-     atom   5 (R=0.074)  charge=  5.8750    0.0000
-     atom   6 (R=0.110)  charge= 10.3539   -0.0000
-     atom   7 (R=0.110)  charge= 10.3454    0.0000
-     atom   8 (R=0.024)  charge= -0.0858    0.0000
-     atom   9 (R=0.024)  charge= -0.0874    0.0000
-     atom  10 (R=0.024)  charge= -0.0868   -0.0000
-     atom  11 (R=0.024)  charge= -0.0863    0.0000
-     atom  12 (R=0.024)  charge= -0.0852   -0.0000
-     atom  13 (R=0.024)  charge= -0.0870   -0.0000
-     atom  14 (R=0.024)  charge= -0.0853   -0.0000
-     atom  15 (R=0.024)  charge= -0.0851   -0.0000
-     atom  16 (R=0.024)  charge= -0.0852    0.0000
-     atom  17 (R=0.024)  charge= -0.0852    0.0000
-     atom  18 (R=0.111)  charge=  9.4535   -0.0000
-     atom  19 (R=0.111)  charge=  8.9917    0.0000
-     atom  20 (R=0.111)  charge=  8.9929    0.0000
-     atom  21 (R=0.111)  charge=  8.9961    0.0001
-     atom  22 (R=0.111)  charge=  8.9970    0.0000
-     atom  23 (R=0.024)  charge=  0.0940   -0.0000
+     atom   1 (R=0.074)  charge=  5.9346  magn=  0.0000
+     atom   2 (R=0.074)  charge=  5.8654  magn=  0.0000
+     atom   3 (R=0.074)  charge=  5.8650  magn=  0.0000
+     atom   4 (R=0.074)  charge=  5.8655  magn= -0.0000
+     atom   5 (R=0.074)  charge=  5.8750  magn=  0.0000
+     atom   6 (R=0.110)  charge= 10.3539  magn= -0.0000
+     atom   7 (R=0.110)  charge= 10.3454  magn=  0.0000
+     atom   8 (R=0.024)  charge= -0.0858  magn=  0.0000
+     atom   9 (R=0.024)  charge= -0.0874  magn=  0.0000
+     atom  10 (R=0.024)  charge= -0.0868  magn= -0.0000
+     atom  11 (R=0.024)  charge= -0.0863  magn=  0.0000
+     atom  12 (R=0.024)  charge= -0.0852  magn= -0.0000
+     atom  13 (R=0.024)  charge= -0.0870  magn= -0.0000
+     atom  14 (R=0.024)  charge= -0.0853  magn= -0.0000
+     atom  15 (R=0.024)  charge= -0.0851  magn= -0.0000
+     atom  16 (R=0.024)  charge= -0.0852  magn=  0.0000
+     atom  17 (R=0.024)  charge= -0.0852  magn=  0.0000
+     atom  18 (R=0.111)  charge=  9.4535  magn= -0.0000
+     atom  19 (R=0.111)  charge=  8.9917  magn=  0.0000
+     atom  20 (R=0.111)  charge=  8.9929  magn=  0.0000
+     atom  21 (R=0.111)  charge=  8.9961  magn=  0.0001
+     atom  22 (R=0.111)  charge=  8.9970  magn=  0.0000
+     atom  23 (R=0.024)  charge=  0.0940  magn= -0.0000
 
      total cpu time spent up to now is     3326.7 secs
 
@@ -7541,29 +7541,29 @@ H             5.3612484405        6.2255994236        5.0704557633
      negative rho (up, down):  9.090E-01 9.090E-01
 
      Magnetic moment per site  (integrated on atomic sphere of radius R)
-     atom   1 (R=0.074)  charge=  5.9356   -0.0000
-     atom   2 (R=0.074)  charge=  5.8655    0.0000
-     atom   3 (R=0.074)  charge=  5.8648    0.0000
-     atom   4 (R=0.074)  charge=  5.8655   -0.0000
-     atom   5 (R=0.074)  charge=  5.8775    0.0000
-     atom   6 (R=0.110)  charge= 10.3527    0.0000
-     atom   7 (R=0.110)  charge= 10.3472    0.0000
-     atom   8 (R=0.024)  charge= -0.0858    0.0000
-     atom   9 (R=0.024)  charge= -0.0873    0.0000
-     atom  10 (R=0.024)  charge= -0.0868   -0.0000
-     atom  11 (R=0.024)  charge= -0.0863    0.0000
-     atom  12 (R=0.024)  charge= -0.0852   -0.0000
-     atom  13 (R=0.024)  charge= -0.0870    0.0000
-     atom  14 (R=0.024)  charge= -0.0853   -0.0000
-     atom  15 (R=0.024)  charge= -0.0851    0.0000
-     atom  16 (R=0.024)  charge= -0.0852   -0.0000
-     atom  17 (R=0.024)  charge= -0.0852   -0.0000
-     atom  18 (R=0.111)  charge=  9.4514    0.0000
-     atom  19 (R=0.111)  charge=  8.9948    0.0000
-     atom  20 (R=0.111)  charge=  8.9904   -0.0000
-     atom  21 (R=0.111)  charge=  8.9984    0.0001
-     atom  22 (R=0.111)  charge=  8.9928    0.0000
-     atom  23 (R=0.024)  charge=  0.0942    0.0000
+     atom   1 (R=0.074)  charge=  5.9356  magn= -0.0000
+     atom   2 (R=0.074)  charge=  5.8655  magn=  0.0000
+     atom   3 (R=0.074)  charge=  5.8648  magn=  0.0000
+     atom   4 (R=0.074)  charge=  5.8655  magn= -0.0000
+     atom   5 (R=0.074)  charge=  5.8775  magn=  0.0000
+     atom   6 (R=0.110)  charge= 10.3527  magn=  0.0000
+     atom   7 (R=0.110)  charge= 10.3472  magn=  0.0000
+     atom   8 (R=0.024)  charge= -0.0858  magn=  0.0000
+     atom   9 (R=0.024)  charge= -0.0873  magn=  0.0000
+     atom  10 (R=0.024)  charge= -0.0868  magn= -0.0000
+     atom  11 (R=0.024)  charge= -0.0863  magn=  0.0000
+     atom  12 (R=0.024)  charge= -0.0852  magn= -0.0000
+     atom  13 (R=0.024)  charge= -0.0870  magn=  0.0000
+     atom  14 (R=0.024)  charge= -0.0853  magn= -0.0000
+     atom  15 (R=0.024)  charge= -0.0851  magn=  0.0000
+     atom  16 (R=0.024)  charge= -0.0852  magn= -0.0000
+     atom  17 (R=0.024)  charge= -0.0852  magn= -0.0000
+     atom  18 (R=0.111)  charge=  9.4514  magn=  0.0000
+     atom  19 (R=0.111)  charge=  8.9948  magn=  0.0000
+     atom  20 (R=0.111)  charge=  8.9904  magn= -0.0000
+     atom  21 (R=0.111)  charge=  8.9984  magn=  0.0001
+     atom  22 (R=0.111)  charge=  8.9928  magn=  0.0000
+     atom  23 (R=0.024)  charge=  0.0942  magn=  0.0000
 
      total cpu time spent up to now is     3501.6 secs
 
@@ -7939,29 +7939,29 @@ H             5.4753325415        6.3952545295        5.0702525903
      negative rho (up, down):  9.090E-01 9.090E-01
 
      Magnetic moment per site  (integrated on atomic sphere of radius R)
-     atom   1 (R=0.074)  charge=  5.9348   -0.0000
-     atom   2 (R=0.074)  charge=  5.8655    0.0000
-     atom   3 (R=0.074)  charge=  5.8646    0.0000
-     atom   4 (R=0.074)  charge=  5.8652   -0.0000
-     atom   5 (R=0.074)  charge=  5.8788    0.0000
-     atom   6 (R=0.110)  charge= 10.3555    0.0000
-     atom   7 (R=0.110)  charge= 10.3445    0.0000
-     atom   8 (R=0.024)  charge= -0.0858    0.0000
-     atom   9 (R=0.024)  charge= -0.0872   -0.0000
-     atom  10 (R=0.024)  charge= -0.0868    0.0000
-     atom  11 (R=0.024)  charge= -0.0863    0.0000
-     atom  12 (R=0.024)  charge= -0.0852    0.0000
-     atom  13 (R=0.024)  charge= -0.0870   -0.0000
-     atom  14 (R=0.024)  charge= -0.0853   -0.0000
-     atom  15 (R=0.024)  charge= -0.0851   -0.0000
-     atom  16 (R=0.024)  charge= -0.0852   -0.0000
-     atom  17 (R=0.024)  charge= -0.0852   -0.0000
-     atom  18 (R=0.111)  charge=  9.4540    0.0000
-     atom  19 (R=0.111)  charge=  8.9926    0.0000
-     atom  20 (R=0.111)  charge=  8.9922    0.0000
-     atom  21 (R=0.111)  charge=  8.9953    0.0001
-     atom  22 (R=0.111)  charge=  8.9951    0.0000
-     atom  23 (R=0.024)  charge=  0.0929    0.0000
+     atom   1 (R=0.074)  charge=  5.9348  magn= -0.0000
+     atom   2 (R=0.074)  charge=  5.8655  magn=  0.0000
+     atom   3 (R=0.074)  charge=  5.8646  magn=  0.0000
+     atom   4 (R=0.074)  charge=  5.8652  magn= -0.0000
+     atom   5 (R=0.074)  charge=  5.8788  magn=  0.0000
+     atom   6 (R=0.110)  charge= 10.3555  magn=  0.0000
+     atom   7 (R=0.110)  charge= 10.3445  magn=  0.0000
+     atom   8 (R=0.024)  charge= -0.0858  magn=  0.0000
+     atom   9 (R=0.024)  charge= -0.0872  magn= -0.0000
+     atom  10 (R=0.024)  charge= -0.0868  magn=  0.0000
+     atom  11 (R=0.024)  charge= -0.0863  magn=  0.0000
+     atom  12 (R=0.024)  charge= -0.0852  magn=  0.0000
+     atom  13 (R=0.024)  charge= -0.0870  magn= -0.0000
+     atom  14 (R=0.024)  charge= -0.0853  magn= -0.0000
+     atom  15 (R=0.024)  charge= -0.0851  magn= -0.0000
+     atom  16 (R=0.024)  charge= -0.0852  magn= -0.0000
+     atom  17 (R=0.024)  charge= -0.0852  magn= -0.0000
+     atom  18 (R=0.111)  charge=  9.4540  magn=  0.0000
+     atom  19 (R=0.111)  charge=  8.9926  magn=  0.0000
+     atom  20 (R=0.111)  charge=  8.9922  magn=  0.0000
+     atom  21 (R=0.111)  charge=  8.9953  magn=  0.0001
+     atom  22 (R=0.111)  charge=  8.9951  magn=  0.0000
+     atom  23 (R=0.024)  charge=  0.0929  magn=  0.0000
 
      total cpu time spent up to now is     3675.5 secs
 
