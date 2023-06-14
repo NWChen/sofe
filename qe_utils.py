@@ -27,7 +27,9 @@ PSEUDOPOTENTIALS = {
     'Nb': 'nb_pbe_v1.uspp.F.UPF',
     'Hf': 'hf_pbe_v1.uspp.F.UPF',
     'Zr': 'zr_pbe_v1.uspp.F.UPF',
-    'H': 'h_pbe_v1.4.uspp.F.UPF'
+    'H': 'h_pbe_v1.4.uspp.F.UPF',
+    'Be': 'be_pbe_v1.4.uspp.F.UPF',
+    'W': 'w_pbe_v1.2.uspp.F.UPF'
 }
 OUTDIR = 'outdir'
 
@@ -298,7 +300,7 @@ def pin_bottom_layers(atoms, nlayers, axis='x'):
     pinned_atoms.set_constraint(FixAtoms(mask=mask))
     return pinned_atoms
 
-def md(atoms, nsteps, dt, AXIS="x", initial_eV=None, incident_angle_deg=0, polar_angle_deg=0, suffix=None, is_cluster=True, ncores=12, velocity_multiplier=1):
+def md(atoms, nsteps, dt, AXIS="x", initial_eV=None, incident_angle_deg=0, polar_angle_deg=0, suffix=None, is_cluster=True, ncores=12, velocity_multiplier=1, tstress=True, tprnfor=True):
     suffix = f'{nsteps}steps_{initial_eV}eV_incident{incident_angle_deg}_polar{polar_angle_deg}' + (f'_{suffix}' if suffix else '')
     input_filename = get_qe_filename(atoms, Calculation.MD, FileType.INPUT, suffix=suffix)
     output_filename = get_qe_filename(atoms, Calculation.MD, FileType.OUTPUT, suffix=suffix)
@@ -312,11 +314,14 @@ def md(atoms, nsteps, dt, AXIS="x", initial_eV=None, incident_angle_deg=0, polar
 
         DEUTERIUM_MASS_AMU = 2.014
         vx_au, vy_au, vz_au = velocity(DEUTERIUM_MASS_AMU, initial_eV, normal_angle_deg=incident_angle_deg, polar_angle_deg=polar_angle_deg, multiplier=velocity_multiplier)
+        format_str = 'H {:.5f} {:.5f} {:.5f}'
+
         if AXIS == 'x': # TODO this code is dogshit, clean it up
-            format_str = 'H {:.5f} {:.5f} {:.5f}'
+            atomic_velocities_str += format_str.format(vx_au, vy_au, vz_au)
+        elif AXIS == 'z':
+            atomic_velocities_str += format_str.format(vz_au, vy_au, vx_au)
         else:
             raise NotImplementedError
-        atomic_velocities_str += format_str.format(vx_au, vy_au, vz_au)
     
     input_data = {
         'control': {
@@ -353,12 +358,12 @@ def md(atoms, nsteps, dt, AXIS="x", initial_eV=None, incident_angle_deg=0, polar
             atoms,
             input_data=input_data,
             pseudopotentials=PSEUDOPOTENTIALS,
-            tstress=True,
-            tprnfor=True,
+            tstress=tstress,
+            tprnfor=tprnfor,
             kpts=None, # gamma k-points
         )
         if initial_eV:
-            print(f'Writing D initial velocity {initial_eV}eV (vx={vx_au}, vy={vy_au}, vz={vz_au} Hartree au)')
+            print(f'Writing D initial velocity {initial_eV}eV (atomic velocities: {atomic_velocities_str})')
             f.write(atomic_velocities_str)
 
     run(input_filename, output_filename, ncores=ncores, is_cluster=is_cluster)
