@@ -44,7 +44,7 @@ PS_TO_AU = 1e-12 / (4.8378 * 1e-17)
 FS_TO_AU = 1e-15 / (4.8378 * 1e-17)
 
 DEUTERIUM_MASS_AMU = 2.014
-DT = 0.2 * round(FS_TO_AU) # 0.2fs
+DT = 0.1 * round(FS_TO_AU) # 0.2fs
 
 
 # ## Add vacuum and a single `D` atom
@@ -79,9 +79,11 @@ output_filename = md(
     atoms,
     nsteps=20,
     dt=DT,
+    AXIS='y',
     initial_eV=2000,
     is_cluster=False,
-    ncores=12,
+    ncores=42,
+    velocity_multiplier=2.1
 )
 sanitize(output_filename)
 

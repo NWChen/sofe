@@ -3,7 +3,7 @@
    nstep            = 20
    tstress          = .true.
    tprnfor          = .true.
-   dt               = 4.2
+   dt               = 2.1
    outdir           = 'outdir'
    etot_conv_thr    = 0.01
    forc_conv_thr    = 0.01
@@ -127,4 +127,4 @@ W 0.0 0.0 0.0
 W 0.0 0.0 0.0
 W 0.0 0.0 0.0
 W 0.0 0.0 0.0
-H -0.20010 -0.00000 -0.00000
+H -0.00000 -0.42021 -0.00000

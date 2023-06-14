@@ -320,6 +320,8 @@ def md(atoms, nsteps, dt, AXIS="x", initial_eV=None, incident_angle_deg=0, polar
             atomic_velocities_str += format_str.format(vx_au, vy_au, vz_au)
         elif AXIS == 'z':
             atomic_velocities_str += format_str.format(vz_au, vy_au, vx_au)
+        elif AXIS == 'y':
+            atomic_velocities_str += format_str.format(vy_au, vx_au, vz_au)
         else:
             raise NotImplementedError
     
