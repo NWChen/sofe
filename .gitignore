@@ -9,3 +9,4 @@ outdir/
 pwscf.save/
 q-e/
 sqs2poscar/
+*.pyc
