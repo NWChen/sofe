@@ -55,32 +55,19 @@ DT = 0.1 * round(FS_TO_AU) # 0.2fs
 
 
 # Create our slab
-slab = import_vasp('input/Be2W.cube.vasp', truncate=False)
+slab = import_vasp('input/Be18W4.cube.vasp', truncate=False)
 atoms = deepcopy(slab)
-atoms.center(vacuum=3.)
-DEUTERIUM_XYZ = np.array([7.44409418, 9.8, 6.11590426])
+DEUTERIUM_XYZ = np.array([0.2, 5.0, 1.63156075]) #[0, 3.191, 2.566])
 deuterium = Atom('H', mass=DEUTERIUM_MASS_AMU, position=DEUTERIUM_XYZ)
 atoms.append(deuterium)
-plot_atoms(atoms)
-
-
-# In[4]:
-
-
-plot_atoms(atoms, rotation=('90x,0y,0z'))
-
-
-# ## Run MD
-
-# In[5]:
-
+atoms.center(vacuum=2.)
 
 output_filename = md(
     atoms,
-    nsteps=20,
+    nsteps=15,
     dt=DT,
     AXIS='y',
-    initial_eV=2000,
+    initial_eV=1000,
     is_cluster=False,
     ncores=42,
     velocity_multiplier=2.1
